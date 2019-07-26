@@ -1,0 +1,16 @@
+.bl-unj{
+    border-left: 5px solid #006f45;
+}
+
+.text-unj{
+    color: #495057;
+    /* list-style: none; */
+}
+
+.tabss a:hover{
+    cursor: pointer;
+}
+
+.card-shadow{
+    box-shadow: 6 6px 10px 6px rgba(0, 0, 0, 0.15)
+}

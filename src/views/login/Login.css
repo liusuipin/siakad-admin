@@ -1,0 +1,44 @@
+.bg-login-image {
+  background: url("loginimg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.mt-6vh{
+    margin-top: 4vh;
+}
+
+.bg-unj-login{
+    background-color: #006f45;
+    height: 100%;
+}
+
+.bg-unj{
+    background-color: #006f45;
+}
+
+.btn-unj {
+    color: #fff;
+    background-color: #006f45 !important;
+    border-color: #006f45 !important;
+  }
+  
+  .btn-unj:hover {
+    color: #fff;
+    background-color: #045637 !important;
+    border-color: #045637 !important;
+  }
+
+  .form-control-user{
+    font-size: 0.8rem !important;
+    border-radius: 10rem !important;
+    padding: 1.5rem 1rem !important;
+  }
+
+  .br-1{
+      border-right: 1px solid rgba(0,0,0,.1);
+  }
+
+  .left-login{
+    margin-top: 50px !important;
+  }
