@@ -10,13 +10,13 @@ export default class DaftarJadwal extends Component {
                         <ListGroupItem disabled tag="a" href="#" className="bg-light"><i className="fas fa-list-alt mr-2"></i>Hasil Penginputan Jadwal Perkuliahan Semester 110</ListGroupItem>
                         <ListGroupItem>
                             <Row>
-                                <Col sm="4" className="mx-auto text-center">
+                                <Col sm="4" className="mx-auto text-center mt-2">
                                     <Button className="btn-info"><i className="far fa-file-excel mr-2"></i>Jadwal Dibuka Ekspor (Excel)</Button>
                                 </Col>
-                                <Col sm="4" className="mx-auto text-center">
+                                <Col sm="4" className="mx-auto text-center mt-2">
                                     <Button className="btn-info"><i className="far fa-file-excel mr-2"></i>Penggunaan Ruang Ekspor (Excel)</Button>
                                 </Col>
-                                <Col sm="4" className="mx-auto text-center">
+                                <Col sm="4" className="mx-auto text-center mt-2">
                                     <Button className="btn-info"><i className="far fa-file-pdf mr-2"></i>Jadwal Dibuka Cetak (PDF)</Button>
                                 </Col>
                             </Row>
