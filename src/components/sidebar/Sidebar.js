@@ -18,7 +18,7 @@ class Sidebar extends Component {
             <Fragment>
 
                 {/* SIDEBAR MODE PC */}
-                <div className={this.props.state.sidebar ? "sidebar-close sidebar  bg-white d-none d-lg-block" : "sidebar-open sidebar bg-white d-none d-lg-block"}>
+                <div className={this.props.state.sidebar ? "sidebar-close sidebar overflow-sidebar  bg-white d-none d-lg-block" : "sidebar-open overflow-sidebar sidebar bg-white d-none d-lg-block"}>
                     <div md="2" className="text-dark">
                         <Row>
                             <Col>
@@ -39,25 +39,25 @@ class Sidebar extends Component {
 
                                         <NavLink exact to="/database" id="akademik" className="text-decoration-none"><li className="p-2"><i className="fas fa-landmark mr-2"></i> Akademik <i className="fas fa-sort-down float-right"></i></li></NavLink>
                                         <UncontrolledCollapse toggler="#akademik">
-                                            <Card className="mt-1">
-                                                <NavLink exact to="/penjadwalan" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Penjadwalan</span></li></NavLink>
-                                                <NavLink exact to="/peta-ruang" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Peta Ruang</span></li></NavLink>
-                                                <NavLink exact to="/peta-dosen" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Peta Dosen</span></li></NavLink>
-                                                <NavLink exact to="/kelas-dosen" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Kelas Dosen</span></li></NavLink>
-                                                <NavLink exact to="/kelas-seksi" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Kelas Seksi</span></li></NavLink>
-                                                <NavLink exact to="/pembimbing-akademik" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Pembimbing Akademik</span></li></NavLink>
-                                                <NavLink exact to="/studi-mahasiswa" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Studi Mahasiswa</span></li></NavLink>
-                                                <NavLink exact to="/krs-kosong" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> KRS Kosong</span></li></NavLink>
-                                                <NavLink exact to="/dosen-belum-isi-nilai" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Dosen Belum Isi Nilai</span></li></NavLink>
+                                            <Card className="mt-1 p-2">
+                                                <NavLink exact to="/penjadwalan" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Penjadwalan</span></li></NavLink>
+                                                <NavLink exact to="/peta-ruang" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Peta Ruang</span></li></NavLink>
+                                                <NavLink exact to="/peta-dosen" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Peta Dosen</span></li></NavLink>
+                                                <NavLink exact to="/kelas-dosen" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Kelas Dosen</span></li></NavLink>
+                                                <NavLink exact to="/kelas-seksi" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Kelas Seksi</span></li></NavLink>
+                                                <NavLink exact to="/pembimbing-akademik" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Pembimbing Akademik</span></li></NavLink>
+                                                <NavLink exact to="/studi-mahasiswa" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Studi Mahasiswa</span></li></NavLink>
+                                                <NavLink exact to="/krs-kosong" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> KRS Kosong</span></li></NavLink>
+                                                <NavLink exact to="/dosen-belum-isi-nilai" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Dosen Belum Isi Nilai</span></li></NavLink>
                                             </Card>
                                         </UncontrolledCollapse>
 
                                         <NavLink exact to="/database" id="database" className="text-decoration-none"><li className="p-2"><i className="fas fa-database mr-2"></i> Database Master <i className="fas fa-sort-down float-right"></i></li></NavLink>
                                         <UncontrolledCollapse toggler="#database">
-                                            <Card className="mt-1">
-                                                <NavLink exact to="/dosen" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Dosen</span></li></NavLink>
-                                                <NavLink exact to="/mahasiswa" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Mahasiswa</span></li></NavLink>
-                                                <NavLink exact to="/mata-kuliah" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Mata Kuliah</span></li></NavLink>
+                                            <Card className="mt-1 mb-4 p-2">
+                                                <NavLink exact to="/dosen" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Dosen</span></li></NavLink>
+                                                <NavLink exact to="/mahasiswa" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Mahasiswa</span></li></NavLink>
+                                                <NavLink exact to="/mata-kuliah" activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Mata Kuliah</span></li></NavLink>
                                             </Card>
                                         </UncontrolledCollapse>
 
@@ -71,7 +71,7 @@ class Sidebar extends Component {
 
 
                 {/* SIDEBAR MODE HP */}
-                <div className={this.props.state.sidebar ? "sidebar-close sidebar  bg-white d-lg-none d-xl-none" : "sidebar-open sidebar bg-white d-lg-none d-xl-none"}>
+                <div className={this.props.state.sidebar ? "sidebar-close sidebar overflow-sidebar  bg-white d-lg-none d-xl-none" : "sidebar-open overflow-sidebar sidebar bg-white d-lg-none d-xl-none"}>
                     <div md="2" className="text-dark">
                         <Row>
                             <Col>
@@ -86,7 +86,7 @@ class Sidebar extends Component {
 
                                         {/* <hr /> */}
 
-                                       
+
                                         {/* <NavLink exact to="/bpa" activeClassName="sidebar-item-active" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} className="text-decoration-none"><li className="p-2"><i className="fas fa-book mr-2"></i> BPA</li></NavLink> */}
                                         {/* <NavLink exact to="/unduh" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} id="toggler" className="text-decoration-none"><li className="p-2"><i className="fas fa-download mr-2"></i> Unduh Form <i className="fas fa-sort-down float-right"></i></li></NavLink>
                                         <UncontrolledCollapse toggler="#toggler">
@@ -101,25 +101,25 @@ class Sidebar extends Component {
 
                                         <NavLink exact to="/database" id="akademik" className="text-decoration-none"><li className="p-2"><i className="fas fa-landmark mr-2"></i> Akademik <i className="fas fa-sort-down float-right"></i></li></NavLink>
                                         <UncontrolledCollapse toggler="#akademik">
-                                            <Card className="mt-1">
-                                                <NavLink exact to="/penjadwalan" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Penjadwalan</span></li></NavLink>
-                                                <NavLink exact to="/peta-ruang" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Peta Ruang</span></li></NavLink>
-                                                <NavLink exact to="/peta-dosen" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} ><li className="p-2"><span className="ml-4"> Peta Dosen</span></li></NavLink>
-                                                <NavLink exact to="/kelas-dosen" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Kelas Dosen</span></li></NavLink>
-                                                <NavLink exact to="/kelas-seksi" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Kelas Seksi</span></li></NavLink>
-                                                <NavLink exact to="/pembimbing-akademik" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Pembimbing Akademik</span></li></NavLink>
-                                                <NavLink exact to="/studi-mahasiswa" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Studi Mahasiswa</span></li></NavLink>
-                                                <NavLink exact to="/krs-kosong" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> KRS Kosong</span></li></NavLink>
-                                                <NavLink exact to="/dosen-belum-isi-nilai" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Dosen Belum Isi Nilai</span></li></NavLink>
+                                            <Card className="mt-1 p-2">
+                                                <NavLink exact to="/penjadwalan" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Penjadwalan</span></li></NavLink>
+                                                <NavLink exact to="/peta-ruang" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Peta Ruang</span></li></NavLink>
+                                                <NavLink exact to="/peta-dosen" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} ><li className="p-2"><span className=""> Peta Dosen</span></li></NavLink>
+                                                <NavLink exact to="/kelas-dosen" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Kelas Dosen</span></li></NavLink>
+                                                <NavLink exact to="/kelas-seksi" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Kelas Seksi</span></li></NavLink>
+                                                <NavLink exact to="/pembimbing-akademik" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Pembimbing Akademik</span></li></NavLink>
+                                                <NavLink exact to="/studi-mahasiswa" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Studi Mahasiswa</span></li></NavLink>
+                                                <NavLink exact to="/krs-kosong" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> KRS Kosong</span></li></NavLink>
+                                                <NavLink exact to="/dosen-belum-isi-nilai" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Dosen Belum Isi Nilai</span></li></NavLink>
                                             </Card>
                                         </UncontrolledCollapse>
-                                        
+
                                         <NavLink exact to="/database" id="database" className="text-decoration-none"><li className="p-2"><i className="fas fa-database mr-2"></i> Database Master <i className="fas fa-sort-down float-right"></i></li></NavLink>
                                         <UncontrolledCollapse toggler="#database">
-                                            <Card className="mt-1">
-                                                <NavLink exact to="/dosen" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Dosen</span></li></NavLink>
-                                                <NavLink exact to="/mahasiswa" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Mahasiswa</span></li></NavLink>
-                                                <NavLink exact to="/mata-kuliah" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })}  activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className="ml-4"> Mata Kuliah</span></li></NavLink>
+                                            <Card className="mt-1 mb-5 p-2">
+                                                <NavLink exact to="/dosen" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Dosen</span></li></NavLink>
+                                                <NavLink exact to="/mahasiswa" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Mahasiswa</span></li></NavLink>
+                                                <NavLink exact to="/mata-kuliah" onClick={() => this.props.dispatch({ type: 'HANDLER_SIDEBAR' })} activeClassName="sidebar-item-active" className="text-decoration-none"><li className="p-2"><span className=""> Mata Kuliah</span></li></NavLink>
                                             </Card>
                                         </UncontrolledCollapse>
 
