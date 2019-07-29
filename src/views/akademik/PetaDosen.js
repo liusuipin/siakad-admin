@@ -40,34 +40,100 @@ class PetaDosen extends Component {
                                         </Breadcrumb>
                                     </div>
                                     <div className="col-md-12 mx-auto mt-2">
-                                        <h4 className="text-center mb-4">Peta Dosen</h4>
+                                        <h4 className="text-center mb-2">Peta Dosen</h4>
                                         {/* <DataDosen data={this.dataSet} /> */}
+                                        <Row>
+                                            <Col sm="12">
+                                                <Form className="mb-4">
+                                                    <FormGroup row>
+                                                        <Col lg="3" sm="6" md="12" className="pt-3">
+                                                            <Label for="exampleSelect">Semester :</Label>
+                                                            <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
+                                                                <option>2019</option>
+                                                                <option>2018</option>
+                                                                <option>2017</option>
+                                                                <option>2016</option>
+                                                                <option>2015</option>
+                                                                <option>2014</option>
+                                                                <option>2013</option>
+                                                            </Input>
+                                                        </Col>
+                                                        <Col lg="3" md="12" className="pt-3">
+                                                            <Label for="exampleSelect">Dosen :</Label>
+                                                            <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
+                                                                <option>2019</option>
+                                                                <option>2018</option>
+                                                                <option>2017</option>
+                                                                <option>2016</option>
+                                                                <option>2015</option>
+                                                                <option>2014</option>
+                                                                <option>2013</option>
+                                                            </Input>
+                                                        </Col>
+                                                        <Col sm="3" className="pt-3 mt-auto">
+                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Filter</Button>
+                                                        </Col>
+                                                    </FormGroup>
+                                                </Form>
+                                            </Col>
+                                        </Row>
                                         <div className="table-responsive">
                                             <Table bordered>
                                                 <thead className="thead-light">
                                                     <tr>
-                                                        <th>No</th>
-                                                        <th>NIDN</th>
-                                                        <th>Nama Dosen</th>
-                                                        <th>Prodi</th>
-                                                        <th>NIP</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th className="text-center">Status</th>
-                                                        <th>Aksi</th>
+                                                        <th rowSpan={2} className="text-center">No</th>
+                                                        <th rowSpan={2} className="text-center">Jam Perkuliahan</th>
+                                                        <th colSpan={7} className="text-center">Hari Perkuliahan</th>
                                                     </tr>
+                                                    <tr>
+                                                        <th className="text-center">Senin</th>
+                                                        <th className="text-center">Selasa</th>
+                                                        <th className="text-center">Rabu</th>
+                                                        <th className="text-center">Kamis</th>
+                                                        <th className="text-center">Jumat</th>
+                                                        <th className="text-center">Sabtu</th>
+                                                        <th className="text-center">Minggu</th>
+                                                    </tr>
+
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">1</th>
-                                                        <td>123213</td>
-                                                        <td>Yuliatri SastraWidjaya</td>
-                                                        <td>PTIK</td>
-                                                        <td>312313</td>
-                                                        <td>Perempuan</td>
-                                                        <td className="text-center">Aktif</td>
-                                                        <td>
-                                                            <Button color="success" className="btn-sm" onClick={this.modalData}><i className="fas fa-user-edit"></i> Edit</Button>
-                                                        </td>
+                                                        <td>8:00</td>
+                                                        <td className="bg-danger text-white">Seksi:1707600015
+Nama MK:Statistika Ekonomi I</td>
+                                                        <td>Avail</td>
+                                                        <td className="bg-danger text-white">Seksi:1706600053
+Nama MK:Etika Profesi Akuntan</td>
+                                                        <td>Avail</td>
+                                                        <td className="text-center">Avail</td>
+                                                        <td className="text-center">Avail</td>
+                                                        <td className="text-center">Avail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>9:00</td>
+                                                        <td>Avail</td>
+                                                        <td className="bg-danger text-white">Seksi:1707600027
+Nama MK:Pendalaman Metodologi Penelitian</td>
+                                                        <td>Avail</td>
+                                                        <td>Avail</td>
+                                                        <td className="text-center">Avail</td>
+                                                        <td className="text-center">Avail</td>
+                                                        <td className="text-center">Avail</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>10:00</td>
+                                                        <td>Avail</td>
+                                                        <td>Avail</td>
+                                                        <td>Avail</td>
+                                                        <td className="bg-danger text-white">Seksi:1707600028
+Nama MK:Manajemen Keuangan</td>
+                                                        <td className="bg-danger text-white">	Seksi:1707600022
+Nama MK:Filsafat Ilmu</td>
+                                                        <td className="text-center">Avail</td>
+                                                        <td className="text-center">Avail</td>
                                                     </tr>
                                                 </tbody>
                                             </Table>

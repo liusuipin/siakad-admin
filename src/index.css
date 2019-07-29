@@ -32,6 +32,11 @@ code {
   text-align: center;
 }
 
+.th-width250{
+  min-width: 250px;
+  text-align: center;
+}
+
 .th-width140{
   min-width: 140px;
   text-align: center;

@@ -27,26 +27,35 @@ export default class DaftarJadwal extends Component {
                                             <thead className="thead-light">
                                                 <tr>
                                                     <th>No</th>
-                                                    <th>NIDN</th>
-                                                    <th>Nama Dosen</th>
+                                                    <th>Seksi/ Kelas</th>
                                                     <th>Prodi</th>
-                                                    <th>NIP</th>
-                                                    <th>Jenis Kelamin</th>
-                                                    <th className="text-center">Status</th>
-                                                    <th>Aksi</th>
+                                                    <th>Angkatan</th>
+                                                    <th>Status Kelas</th>
+                                                    <th>Status Pertemuan</th>
+                                                    <th>Nama MK</th>
+                                                    <th>Dosen</th>
+                                                    <th>Waktu</th>
+                                                    <th>Lokasi</th>
+                                                    <th className="text-center">Daya Tampung/ Peserta</th>
+                                                    <th className="th-width">Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td>123213</td>
-                                                    <td>Yuliatri SastraWidjaya</td>
-                                                    <td>PTIK</td>
-                                                    <td>312313</td>
-                                                    <td>Perempuan</td>
-                                                    <td className="text-center">Aktif</td>
+                                                    <td>1512600001</td>
+                                                    <td>PENDIDIKAN TEKNIK INFORMATIKA DAN KOMPUTER/S1</td>
+                                                    <td>2016</td>
+                                                    <td>2</td>
+                                                    <td>0</td>
+                                                    <td className="text-center">52351402-Praktek Keterampilan Mengajar</td>
+                                                    <td>YULIATRI SASTRA WIJAYA </td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>6/0</td>
                                                     <td>
-                                                        <Button color="success" className="btn-sm" onClick={this.modalData}><i className="fas fa-user-edit"></i> Edit</Button>
+                                                        <Button color="success" className="btn-sm" onClick={this.modalData}><i className="fas fa-pencil-alt"></i> Edit</Button>
+                                                        <Button color="danger" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-trash-alt"></i> Hapus</Button>
                                                     </td>
                                                 </tr>
                                             </tbody>

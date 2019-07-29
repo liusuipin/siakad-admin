@@ -40,33 +40,84 @@ class KelasDosen extends Component {
                                         </Breadcrumb>
                                     </div>
                                     <div className="col-md-12 mx-auto mt-2">
-                                        <h4 className="text-center mb-4">Kelas Dosen</h4>
+                                        <h4 className="text-center mb-2">Kelas Dosen</h4>
                                         {/* <DataDosen data={this.dataSet} /> */}
-                                        <div className="table-responsive">
+                                        <Row>
+                                            <Col sm="12">
+                                                <Form className="mb-4">
+                                                    <FormGroup row>
+                                                        <Col lg="3" sm="6" md="12" className="pt-3">
+                                                            <Label for="exampleSelect">Dosen Pengampu :</Label>
+                                                            <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
+                                                                <option>2019</option>
+                                                                <option>2018</option>
+                                                                <option>2017</option>
+                                                                <option>2016</option>
+                                                                <option>2015</option>
+                                                                <option>2014</option>
+                                                                <option>2013</option>
+                                                            </Input>
+                                                        </Col>
+                                                        <Col lg="3" md="12" className="pt-3">
+                                                            <Label for="exampleSelect">Semester :</Label>
+                                                            <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
+                                                                <option>2019</option>
+                                                                <option>2018</option>
+                                                                <option>2017</option>
+                                                                <option>2016</option>
+                                                                <option>2015</option>
+                                                                <option>2014</option>
+                                                                <option>2013</option>
+                                                            </Input>
+                                                        </Col>
+                                                        <Col sm="3" className="pt-3 mt-auto">
+                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Filter</Button>
+                                                        </Col>
+                                                    </FormGroup>
+                                                </Form>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col sm="12">
+                                                <h4>Daftar Kelas Dosen Semester 110</h4>
+                                                <hr />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col sm="6">
+                                                <p><b>NIDN</b><br />0024087402</p>
+                                                <p><b>Nama Dosen</b><br />Hamidillah Ajie</p>
+                                            </Col>
+                                            <Col sm="6">
+                                                <p><b>Homebase</b><br />S1 PENDIDIKAN TEKNIK INFORMATIKA DAN KOMPUTER</p>
+                                                <p><b>NIP</b><br />197408242005011001</p>
+                                            </Col>
+                                        </Row>
+                                        <div className="table-responsive mt-2">
                                             <Table bordered>
                                                 <thead className="thead-light">
                                                     <tr>
                                                         <th>No</th>
-                                                        <th>NIDN</th>
-                                                        <th>Nama Dosen</th>
-                                                        <th>Prodi</th>
-                                                        <th>NIP</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th className="text-center">Status</th>
-                                                        <th>Aksi</th>
+                                                        <th>Seksi</th>
+                                                        <th>Mata Kuliah</th>
+                                                        <th>SKS</th>
+                                                        <th>Status</th>
+                                                        <th>Jumlah Mahasiswa</th>
+                                                        <th className="text-center th-width185">Detail</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">1</th>
-                                                        <td>123213</td>
-                                                        <td>Yuliatri SastraWidjaya</td>
-                                                        <td>PTIK</td>
-                                                        <td>312313</td>
-                                                        <td>Perempuan</td>
-                                                        <td className="text-center">Aktif</td>
-                                                        <td>
-                                                            <Button color="success" className="btn-sm" onClick={this.modalData}><i className="fas fa-user-edit"></i> Edit</Button>
+                                                        <td>1512600014</td>
+                                                        <td>Desain Web Lanjut</td>
+                                                        <td>2</td>
+                                                        <td>Pengajar ke.1</td>
+                                                        <td>26</td>
+                                                        <td className="text-center">
+                                                            <Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-th-list"></i> Detail</Button>
+                                                            <Button color="info" className="btn-sm" onClick={this.modalData}><i className="far fa-file-excel"></i> C06</Button>
+                                                            <Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-print"></i> Nilai</Button>
                                                         </td>
                                                     </tr>
                                                 </tbody>

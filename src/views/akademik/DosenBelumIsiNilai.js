@@ -40,34 +40,35 @@ class DosenBelumIsiNilai extends Component {
                                         </Breadcrumb>
                                     </div>
                                     <div className="col-md-12 mx-auto mt-2">
-                                        <h4 className="text-center mb-4">Dosen Belum Isi Nilai</h4>
+                                        <h4 className="text-center mb-4">Dosen Belum Isi Nilai 110</h4>
                                         {/* <DataDosen data={this.dataSet} /> */}
-                                        <div className="table-responsive">
+                                        <Row>
+                                            <Col sm="6" className="pt-3">
+                                                <Button color="info" className="btn-sm" onClick={this.modalData}><i className="far fa-file-excel"></i> Ekspor</Button>
+                                            </Col>
+                                        </Row>
+                                        <div className="table-responsive mt-3">
                                             <Table bordered>
                                                 <thead className="thead-light">
                                                     <tr>
                                                         <th>No</th>
-                                                        <th>NIDN</th>
-                                                        <th>Nama Dosen</th>
-                                                        <th>Prodi</th>
-                                                        <th>NIP</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th className="text-center">Status</th>
-                                                        <th>Aksi</th>
+                                                        <th>Program Studi</th>
+                                                        <th>Seksi/ Kelas</th>
+                                                        <th>Dosen</th>
+                                                        <th>Nama Mata Kuliah</th>
+                                                        <th>JSKS</th>
+                                                        <th className="text-center">Jumlah Peserta</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">1</th>
-                                                        <td>123213</td>
-                                                        <td>Yuliatri SastraWidjaya</td>
-                                                        <td>PTIK</td>
-                                                        <td>312313</td>
-                                                        <td>Perempuan</td>
-                                                        <td className="text-center">Aktif</td>
-                                                        <td>
-                                                            <Button color="success" className="btn-sm" onClick={this.modalData}><i className="fas fa-user-edit"></i> Edit</Button>
-                                                        </td>
+                                                        <td>PENDIDIKAN TEKNIK INFORMATIKA DAN KOMPUTER</td>
+                                                        <td>1512600072</td>
+                                                        <td>Bachren Zaini</td>
+                                                        <td>Aljabar Linier</td>
+                                                        <td>3</td>
+                                                        <td className="text-center">14</td>
                                                     </tr>
                                                 </tbody>
                                             </Table>

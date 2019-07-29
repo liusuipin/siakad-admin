@@ -40,33 +40,63 @@ class StudiMahasiswa extends Component {
                                         </Breadcrumb>
                                     </div>
                                     <div className="col-md-12 mx-auto mt-2">
-                                        <h4 className="text-center mb-4">Studi Mahasiswa</h4>
+                                        <h4 className="text-center mb-2">Studi Mahasiswa</h4>
                                         {/* <DataDosen data={this.dataSet} /> */}
+                                        <Row>
+                                            <Col sm="12">
+                                                <Form className="mb-4">
+                                                    <FormGroup row>
+                                                        <Col lg="3" sm="6" md="12" className="pt-3">
+                                                            <Label for="exampleSelect">Semester :</Label>
+                                                            <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
+                                                                <option>2019</option>
+                                                                <option>2018</option>
+                                                                <option>2017</option>
+                                                                <option>2016</option>
+                                                                <option>2015</option>
+                                                                <option>2014</option>
+                                                                <option>2013</option>
+                                                            </Input>
+                                                        </Col>
+                                                        <Col lg="3" md="12" className="pt-3">
+                                                            <Label for="exampleSelect">Pencarian :</Label>
+                                                            <Input type="text" name="select" id="exampleSelect" className="form-control-sm" placeholder="Ketik NIM / Nama Mahasiswa" />
+                                                        </Col>
+                                                        <Col sm="3" className="pt-3 mt-auto">
+                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Filter</Button>
+                                                        </Col>
+                                                    </FormGroup>
+                                                </Form>
+                                            </Col>
+                                        </Row>
                                         <div className="table-responsive">
                                             <Table bordered>
                                                 <thead className="thead-light">
+
                                                     <tr>
-                                                        <th>No</th>
-                                                        <th>NIDN</th>
-                                                        <th>Nama Dosen</th>
-                                                        <th>Prodi</th>
-                                                        <th>NIP</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th className="text-center">Status</th>
-                                                        <th>Aksi</th>
+                                                        <th className="text-center">No.</th>
+                                                        <th className="text-center">NIM Mahasiswa</th>
+                                                        <th className="text-center">Nama Mahasiswa</th>
+                                                        <th className="text-center">Jalur Masuk</th>
+                                                        <th className="text-center">Program Studi</th>
+                                                        <th className="th-width250">Aksi</th>
                                                     </tr>
+
                                                 </thead>
                                                 <tbody>
                                                     <tr>
+                                                        <td colSpan={6}>Ditemukan sebanyak 1</td>
+                                                    </tr>
+                                                    <tr>
                                                         <th scope="row">1</th>
-                                                        <td>123213</td>
-                                                        <td>Yuliatri SastraWidjaya</td>
-                                                        <td>PTIK</td>
-                                                        <td>312313</td>
-                                                        <td>Perempuan</td>
-                                                        <td className="text-center">Aktif</td>
-                                                        <td>
-                                                            <Button color="success" className="btn-sm" onClick={this.modalData}><i className="fas fa-user-edit"></i> Edit</Button>
+                                                        <td>5235151927</td>
+                                                        <td>Devin</td>
+                                                        <td>SNMPTN</td>
+                                                        <td>PENDIDIKAN TEKNIK INFORMATIKA DAN KOMPUTER</td>
+                                                        <td className="text-center">
+                                                            <Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button>
+                                                            <Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button>
+                                                            <Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button>
                                                         </td>
                                                     </tr>
                                                 </tbody>

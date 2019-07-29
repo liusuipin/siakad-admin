@@ -40,34 +40,49 @@ class KrsKosong extends Component {
                                         </Breadcrumb>
                                     </div>
                                     <div className="col-md-12 mx-auto mt-2">
-                                        <h4 className="text-center mb-4">KRS Kosong</h4>
+                                        <h4 className="text-center mb-2">KRS Kosong</h4>
                                         {/* <DataDosen data={this.dataSet} /> */}
-                                        <div className="table-responsive">
+                                        <Row>
+                                            <Col sm="12">
+                                                <Form className="mb-4">
+                                                    <FormGroup row>
+                                                        <Col lg="3" md="12" className="pt-3">
+                                                            <Label for="exampleSelect">Semester :</Label>
+                                                            <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
+                                                                <option>2019</option>
+                                                                <option>2018</option>
+                                                                <option>2017</option>
+                                                                <option>2016</option>
+                                                                <option>2015</option>
+                                                                <option>2014</option>
+                                                                <option>2013</option>
+                                                            </Input>
+                                                        </Col>
+                                                        <Col sm="3" className="pt-3 mt-auto">
+                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
+                                                        </Col>
+                                                    </FormGroup>
+                                                </Form>
+                                            </Col>
+                                        </Row>
+                                        <div className="table-responsive mt-2">
                                             <Table bordered>
                                                 <thead className="thead-light">
                                                     <tr>
                                                         <th>No</th>
-                                                        <th>NIDN</th>
-                                                        <th>Nama Dosen</th>
-                                                        <th>Prodi</th>
-                                                        <th>NIP</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th className="text-center">Status</th>
-                                                        <th>Aksi</th>
+                                                        <th>NIM</th>
+                                                        <th>Nama Mahasiswa</th>
+                                                        <th>Jalur Masuk</th>
+                                                        <th>Program Studi</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">1</th>
-                                                        <td>123213</td>
-                                                        <td>Yuliatri SastraWidjaya</td>
-                                                        <td>PTIK</td>
-                                                        <td>312313</td>
-                                                        <td>Perempuan</td>
-                                                        <td className="text-center">Aktif</td>
-                                                        <td>
-                                                            <Button color="success" className="btn-sm" onClick={this.modalData}><i className="fas fa-user-edit"></i> Edit</Button>
-                                                        </td>
+                                                        <td>5235152263</td>
+                                                        <td>FEBRIANTO WIDYOUTOMO</td>
+                                                        <td>SBMPTN</td>
+                                                        <td>PENDIDIKAN TEKNIK INFORMATIKA DAN KOMPUTER</td>
                                                     </tr>
                                                 </tbody>
                                             </Table>
