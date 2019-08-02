@@ -7,7 +7,9 @@ import Sidebar from '../../components/sidebar/Sidebar';
 // import DataDosen from './DataDosen';
 // import Footer from '../../components/footer/Footer';
 // import DataMengajar from './DataMengajar';
-
+import KRS from '../akademik/output-krs.pdf'
+import KHS from '../akademik/output-khs.pdf'
+import DHS from '../akademik/output-dhs.pdf'
 class StudiMahasiswa extends Component {
 
     constructor() {
@@ -35,7 +37,7 @@ class StudiMahasiswa extends Component {
                                 <Col>
                                     <div>
                                         <Breadcrumb className="breadcrumb-me">
-                                            <BreadcrumbItem><Link to="/"><i className="fas fa-home mr-1"></i> Beranda</Link></BreadcrumbItem>
+                                            <BreadcrumbItem><Link to="/"><i className="fas fa-landmark mr-2"></i>Akademik</Link></BreadcrumbItem>
                                             <BreadcrumbItem active>Studi Mahasiswa</BreadcrumbItem>
                                         </Breadcrumb>
                                     </div>
@@ -49,13 +51,15 @@ class StudiMahasiswa extends Component {
                                                         <Col lg="3" sm="6" md="12" className="pt-3">
                                                             <Label for="exampleSelect">Semester :</Label>
                                                             <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
-                                                                <option>2019</option>
-                                                                <option>2018</option>
-                                                                <option>2017</option>
-                                                                <option>2016</option>
-                                                                <option>2015</option>
-                                                                <option>2014</option>
-                                                                <option>2013</option>
+                                                                <option>Pilih Semester</option>
+                                                                <option>103-20151</option>
+                                                                <option>104-20152</option>
+                                                                <option>105-20161</option>
+                                                                <option>106-20162</option>
+                                                                <option>107-20171</option>
+                                                                <option>108-20172</option>
+                                                                <option>109-20181</option>
+                                                                <option>110-20191</option>
                                                             </Input>
                                                         </Col>
                                                         <Col lg="3" md="12" className="pt-3">
@@ -63,7 +67,7 @@ class StudiMahasiswa extends Component {
                                                             <Input type="text" name="select" id="exampleSelect" className="form-control-sm" placeholder="Ketik NIM / Nama Mahasiswa" />
                                                         </Col>
                                                         <Col sm="3" className="pt-3 mt-auto">
-                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Filter</Button>
+                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
                                                         </Col>
                                                     </FormGroup>
                                                 </Form>
@@ -85,18 +89,42 @@ class StudiMahasiswa extends Component {
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td colSpan={6}>Ditemukan sebanyak 1</td>
+                                                        <td colSpan={6}>Ditemukan sebanyak 3</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">1</th>
-                                                        <td>5235151927</td>
-                                                        <td>Devin</td>
+                                                        <td>5235150233</td>
+                                                        <td>Azizah Khoiro Nisah</td>
                                                         <td>SNMPTN</td>
-                                                        <td>PENDIDIKAN TEKNIK INFORMATIKA DAN KOMPUTER</td>
+                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
                                                         <td className="text-center">
-                                                            <Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button>
-                                                            <Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button>
-                                                            <Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button>
+                                                            <a href={KRS}download><Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button></a>
+                                                            <a href={KHS}download><Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button></a>
+                                                            <a href={DHS}download><Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>5235151078</td>
+                                                        <td>Nia Septiani</td>
+                                                        <td>SNMPTN</td>
+                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                        <td className="text-center">
+                                                            <a href={KRS}download><Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button></a>
+                                                            <a href={KHS}download><Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button></a>
+                                                            <a href={DHS}download><Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>5235150646</td>
+                                                        <td>Cindy Desmayanti</td>
+                                                        <td>SNMPTN</td>
+                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                        <td className="text-center">
+                                                            <a href={KRS}download><Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button></a>
+                                                            <a href={KHS}download><Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button></a>
+                                                            <a href={DHS}download><Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button></a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -111,82 +139,7 @@ class StudiMahasiswa extends Component {
                     </div>
                 </div>
 
-                <Modal isOpen={this.state.modalData} toggle={this.modalData} className="modal-dialog-scrollable">
-                    <ModalHeader toggle={this.modalData}>Edit Data Dosen</ModalHeader>
-                    <ModalBody>
-                        <div>
-                            <Form>
-                                <FormGroup>
-                                    <Label for="exampleEmail">NIDN</Label>
-                                    <Input type="text" name="email" id="exampleEmail" placeholder="with a placeholder" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Nama</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="YULIATRI SASTRA WIJAYA" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Gelar Depan</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="Dr" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Gelar Belakang</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="M.Pd." />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">NIP</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="195807061983032002" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="exampleSelect">Home Base</Label>
-                                    <Input type="select" name="select" id="exampleSelect">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </Input>
-                                </FormGroup>
-                                <FormGroup tag="fieldset">
-                                    <Label>Jenis Kelamin</Label>
-                                    <FormGroup check>
-                                        <Label check>
-                                            <Input type="radio" name="radio1" />{' '}
-                                            Laki-laki
-            </Label>
-                                    </FormGroup>
-                                    <FormGroup check>
-                                        <Label check>
-                                            <Input type="radio" name="radio1" />{' '}
-                                            Perempuan
-            </Label>
-                                    </FormGroup>
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Tempat Lahir</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="Tanjungkarang Lampung" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Tempat Lahir</Label>
-                                    <Input type="date" name="password" id="examplePassword" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="exampleSelect">Keaktifan Dosen</Label>
-                                    <Input type="select" name="select" id="exampleSelect">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </Input>
-                                </FormGroup>
-                            </Form>
-                        </div>
-                    </ModalBody>
-                    <ModalFooter>
-                        <Button className="btn-info">Simpan</Button>
-                        <Button className="btn-danger" onClick={this.modalData}>Tutup</Button>
-                    </ModalFooter>
-                </Modal>
+                
 
             </Fragment>
         )

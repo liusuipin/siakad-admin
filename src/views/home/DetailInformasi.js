@@ -27,12 +27,12 @@ class DetailInformasi extends Component {
 
                                     <Row>
                                         <Col sm="12">
-                                            <h3>Judul Berita</h3>
-                                            <small className="text-secondary">30 Juni 2019</small>
+                                            <h3>Jadwal Kegiatan Akhir Semester 110</h3>
+                                            <small className="text-secondary">29 Juli 2019</small>
                                         </Col>
                                         <Col sm="12" className="mt-3">
                                             <p>
-                                                Isi Berita
+                                            Diberitahukan Kepada Seluruh Dosen Universitas Negeri Jakarta terkait dengan jadwal kegiatan akhir semester 110.
                                             </p>
                                         </Col>
                                     </Row>

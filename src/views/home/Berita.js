@@ -12,22 +12,22 @@ export default class Berita extends Component {
                             <Card>
                                 <CardBody className="bl-unj">
                                     <Link to="detail-informasi">
-                                        <CardTitle className="text-muted"><b>Berita satu</b></CardTitle>
+                                        <CardTitle className="text-muted"><b>Jadwal Kegiatan Akhir Semester 110.</b></CardTitle>
                                     </Link>
-                                    <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+                                    <CardText>Diberitahukan Kepada Seluruh Dosen Universitas Negeri Jakarta terkait dengan jadwal kegiatan akhir semester 110.</CardText>
                                     <CardText>
-                                        <small className="text-muted">Last updated 3 mins ago</small>
+                                        <small className="text-muted">Terakhir Diperbaharui 8 menit yang Lalu</small>
                                     </CardText>
                                 </CardBody>
                             </Card>
                             <Card className="mt-3">
                                 <CardBody className="bl-unj">
                                     <Link to="detail-informasi">
-                                        <CardTitle className="text-muted"><b>Berita dua</b></CardTitle>
+                                        <CardTitle className="text-muted"><b>Jadwal Penginputan Nilai Semester 110</b></CardTitle>
                                     </Link>
-                                    <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+                                    <CardText>Diberitahukan Kepada Seluruh Dosen Universitas Negeri Jakarta terkait dengan jadwal kegiatan akhir semester 110.</CardText>
                                     <CardText>
-                                        <small className="text-muted">Last updated 3 mins ago</small>
+                                        <small className="text-muted">Terakhir Diperbaharui 1 menit yang Lalu</small>
                                     </CardText>
                                 </CardBody>
                             </Card>

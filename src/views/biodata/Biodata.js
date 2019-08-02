@@ -53,11 +53,13 @@ class Biodata extends Component {
                                                 <Col sm={7}>
                                                 <Input type="select" name="select" id="exampleSelect" className="">
                                                         <option defaultValue>Fakultas Teknik</option>
+                                                        <option>Fakultas Bahasa dan Seni</option>
+                                                        <option>Fakultas Matematika dan Ilmu Pengetahuan Alam</option>
                                                         <option>Fakultas Ilmu Sosial</option>
-                                                        <option>Fakultas Bahasa & Seni</option>
-                                                        <option>Fakultas Matematika & Pengetahuan Alam</option>
-                                                        <option>Fakultas Ilmu Keolahragaan</option>
-                                                        <option>Fakultas Ilmu Pendidikan</option>
+                                                        <option>Fakultas Ilmu Pendidikan </option>
+                                                        <option>Fakultas Ilmu Olahraga</option>
+                                                        <option>Fakultas Ekonomi</option>
+                                                        <option>Fakultas Pendidikan Psikologi</option>
                                                     </Input>
                                                 </Col>
                                             </FormGroup>
@@ -66,9 +68,13 @@ class Biodata extends Component {
                                                 <Label for="exampleEmail" sm={5}>Koord. Program Studi</Label>
                                                 <Col sm={7}>
                                                     <Input type="select" name="select" id="exampleSelect" className="">
-                                                        <option defaultValue>Yuliatri Sastra Widjaya</option>
-                                                        <option>Bambang Adhi</option>
-                                                        <option>Prasetyo</option>
+                                                        <option defaultValue>Yuliatri Sastrawijaya</option>
+                                                        <option>Lipur Sugiyanta</option>
+                                                        <option>Hamidillah Ajie</option>
+                                                        <option>Widodo</option>
+                                                        <option>Prasetyo Wibowo Yunanto</option>
+                                                        <option>Bambang Prasetya Adhi</option>
+                                                        <option>Diat Nurhidayat</option>
                                                     </Input>
                                                 </Col>
                                             </FormGroup>
@@ -76,14 +82,14 @@ class Biodata extends Component {
                                             <FormGroup row>
                                                 <Label for="exampleEmail" sm={5}>NIDN</Label>
                                                 <Col sm={7}>
-                                                    <Input type="number" name="namaDosen" id="namaDosen" defaultValue="092309380" className="" />
+                                                    <Input type="number" name="namaDosen" id="namaDosen" defaultValue="0006075806" className="" />
                                                 </Col>
                                             </FormGroup>
 
                                             <FormGroup row>
                                                 <Label for="exampleEmail" sm={5}>NIP</Label>
                                                 <Col sm={7}>
-                                                    <Input type="number" name="namaDosen" id="namaDosen" defaultValue="34242" className="" />
+                                                    <Input type="number" name="namaDosen" id="namaDosen" defaultValue="195807061983032002" className="" />
                                                 </Col>
                                             </FormGroup>
 
@@ -97,7 +103,7 @@ class Biodata extends Component {
                                             <FormGroup row>
                                                 <Label for="exampleEmail" sm={5}>Nama Admin Prodi</Label>
                                                 <Col sm={7}>
-                                                    <Input type="text" name="namaDosen" id="namaDosen" defaultValue="NAFISAH" className="" />
+                                                    <Input type="text" name="namaDosen" id="namaDosen" defaultValue="Nafisa Widyaningrum" className="" />
                                                 </Col>
                                             </FormGroup>
 
@@ -108,7 +114,7 @@ class Biodata extends Component {
                                             <FormGroup row>
                                                 <Label for="exampleEmail" sm={5}>No. HP Admin Prodi</Label>
                                                 <Col sm={7}>
-                                                    <Input type="number" name="namaDosen" id="namaDosen" defaultValue="08199898393" className="" />
+                                                    <Input type="number" name="namaDosen" id="namaDosen" defaultValue="08568468839" className="" />
                                                     <Button color="primary" type="button" className="mt-4 btn-sm" onClick={this.update}><i className="fas fa-save"></i> Simpan</Button>
                                                     <Button color="danger" type="reset" className="mt-4 ml-2 btn-sm"><i className="fas fa-undo"></i> Reset</Button>
                                                 </Col>

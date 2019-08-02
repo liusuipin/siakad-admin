@@ -41,12 +41,12 @@ class Penjadwalan extends Component {
                                 <Col>
                                     <div>
                                         <Breadcrumb className="breadcrumb-me">
-                                            <BreadcrumbItem><Link to="/"><i className="fas fa-home mr-1"></i> Beranda</Link></BreadcrumbItem>
+                                            <BreadcrumbItem><Link to="/"><i className="fas fa-landmark mr-2"></i>Akademik</Link></BreadcrumbItem>
                                             <BreadcrumbItem active>Penjadwalan</BreadcrumbItem>
                                         </Breadcrumb>
                                     </div>
                                     <div className="col-md-12 mx-auto mt-2">
-                                        <h4 className="text-center mb-4">Penjadwalan</h4>
+                                        <h4 className="text-center mb-4">Penjadwalan Pendidikan Teknik Informatika dan Komputer</h4>
 
                                         <Row>
                                             <Col sm="12">

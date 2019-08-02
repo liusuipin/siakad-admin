@@ -7,7 +7,7 @@ import Sidebar from '../../components/sidebar/Sidebar';
 // import DataDosen from './DataDosen';
 // import Footer from '../../components/footer/Footer';
 // import DataMengajar from './DataMengajar';
-
+import Swal from 'sweetalert2'
 class PembimbingAkademik extends Component {
 
     constructor() {
@@ -23,6 +23,25 @@ class PembimbingAkademik extends Component {
         })
     }
 
+    delAlert=()=>{
+        return Swal.fire({
+  title: 'Anda yakin ingin menghapus data ini?',
+  text: "Anda tidak akan dapat mengembalikannya!",
+  type: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Ya, hapus data!'
+}).then((result) => {
+  if (result.value) {
+    Swal.fire(
+      'Terhapus!',
+      'Data berhasil dihapus',
+      'success'
+    )
+  }
+})
+    }
     render() {
         return (
             <Fragment>
@@ -35,7 +54,7 @@ class PembimbingAkademik extends Component {
                                 <Col>
                                     <div>
                                         <Breadcrumb className="breadcrumb-me">
-                                            <BreadcrumbItem><Link to="/"><i className="fas fa-home mr-1"></i> Beranda</Link></BreadcrumbItem>
+                                            <BreadcrumbItem><Link to="/"><i className="fas fa-landmark mr-2"></i>Akademik</Link></BreadcrumbItem>
                                             <BreadcrumbItem active>Pembimbing Akademik</BreadcrumbItem>
                                         </Breadcrumb>
                                     </div>
@@ -49,17 +68,18 @@ class PembimbingAkademik extends Component {
                                                         <Col lg="3" md="12" className="pt-3">
                                                             <Label for="exampleSelect">Dosen Bimbingan Akademik :</Label>
                                                             <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
-                                                                <option>2019</option>
-                                                                <option>2018</option>
-                                                                <option>2017</option>
-                                                                <option>2016</option>
-                                                                <option>2015</option>
-                                                                <option>2014</option>
-                                                                <option>2013</option>
+                                                                <option>Pilih Dosen Pengampu</option>
+                                                                <option>0006075806 Yuliatri Sastrawijaya</option>
+                                                                <option>0024087402 Hamidillah Ajie</option>
+                                                                <option>0024097304 M. Ficky Duskarnaen</option>
+                                                                <option>0025037206 Widodo</option>
+                                                                <option>0025028303 Bambang Prasetya Adhi</option>
+                                                                <option>0021067904 Prasetyo Wibowo Yunanto</option>
+                                                                <option>0029127601 Lipur Sugiyanta</option>
                                                             </Input>
                                                         </Col>
                                                         <Col sm="3" className="pt-3 mt-auto">
-                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Filter</Button>
+                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
                                                         </Col>
                                                     </FormGroup>
                                                 </Form>
@@ -77,7 +97,7 @@ class PembimbingAkademik extends Component {
                                                 <p><b>Nama Dosen</b><br />Hamidillah Ajie</p>
                                             </Col>
                                             <Col sm="6">
-                                                <p><b>Homebase</b><br />S1 PENDIDIKAN TEKNIK INFORMATIKA DAN KOMPUTER</p>
+                                                <p><b>Homebase</b><br />S1 Pendidikan Teknik Informatika dan Komputer</p>
                                                 <p><b>NIP</b><br />197408242005011001</p>
                                             </Col>
                                         </Row>
@@ -111,13 +131,37 @@ class PembimbingAkademik extends Component {
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">1</th>
-                                                        <td>5235152263</td>
-                                                        <td>FEBRIANTO WIDYOUTOMO</td>
-                                                        <td>SBMPTN</td>
-                                                        <td>PENDIDIKAN TEKNIK INFORMATIKA DAN KOMPUTER</td>
+                                                        <td>5235150233</td>
+                                                        <td>Azizah Khoiro Nisah</td>
+                                                        <td>SNMPTN</td>
+                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
                                                         <td>3.65</td>
                                                         <td className="text-center">
-                                                            <Button color="danger" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-trash-alt"></i> Hapus</Button>
+                                                            <Button color="danger" className="btn-sm mr-2" onClick={this.delAlert}><i className="fas fa-trash-alt"></i> Hapus</Button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>5235151078</td>
+                                                        <td>Nia Septiani</td>
+                                                        <td>SNMPTN</td>
+                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                        <td>3.70</td>
+                                                        <td className="text-center">
+                                                            <Button color="danger" className="btn-sm mr-2" onClick={this.delAlert}><i className="fas fa-trash-alt"></i> Hapus</Button>
+                                                        </td>
+                                                    </tr>
+
+                                                     <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>5235150646</td>
+                                                        <td>Cindy Desmayanti</td>
+                                                        <td>SNMPTN</td>
+                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                        <td>3.80</td>
+                                                        <td className="text-center">
+                                                            <Button color="danger" className="btn-sm mr-2" onClick={this.delAlert}><i className="fas fa-trash-alt"></i> Hapus</Button>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -133,78 +177,14 @@ class PembimbingAkademik extends Component {
                 </div>
 
                 <Modal isOpen={this.state.modalData} toggle={this.modalData} className="modal-dialog-scrollable">
-                    <ModalHeader toggle={this.modalData}>Edit Data Dosen</ModalHeader>
+                    <ModalHeader toggle={this.modalData}></ModalHeader>
                     <ModalBody>
                         <div>
-                            <Form>
-                                <FormGroup>
-                                    <Label for="exampleEmail">NIDN</Label>
-                                    <Input type="text" name="email" id="exampleEmail" placeholder="with a placeholder" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Nama</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="YULIATRI SASTRA WIJAYA" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Gelar Depan</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="Dr" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Gelar Belakang</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="M.Pd." />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">NIP</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="195807061983032002" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="exampleSelect">Home Base</Label>
-                                    <Input type="select" name="select" id="exampleSelect">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </Input>
-                                </FormGroup>
-                                <FormGroup tag="fieldset">
-                                    <Label>Jenis Kelamin</Label>
-                                    <FormGroup check>
-                                        <Label check>
-                                            <Input type="radio" name="radio1" />{' '}
-                                            Laki-laki
-            </Label>
-                                    </FormGroup>
-                                    <FormGroup check>
-                                        <Label check>
-                                            <Input type="radio" name="radio1" />{' '}
-                                            Perempuan
-            </Label>
-                                    </FormGroup>
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Tempat Lahir</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="Tanjungkarang Lampung" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Tempat Lahir</Label>
-                                    <Input type="date" name="password" id="examplePassword" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="exampleSelect">Keaktifan Dosen</Label>
-                                    <Input type="select" name="select" id="exampleSelect">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </Input>
-                                </FormGroup>
-                            </Form>
+                        <h5>Anda Yakin Untuk Menghapus Data?</h5>
                         </div>
                     </ModalBody>
                     <ModalFooter>
-                        <Button className="btn-info">Simpan</Button>
+                        <Button className="btn-info" onClick={this.modalData}>Simpan</Button>
                         <Button className="btn-danger" onClick={this.modalData}>Tutup</Button>
                     </ModalFooter>
                 </Modal>

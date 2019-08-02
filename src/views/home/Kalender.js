@@ -21,8 +21,7 @@ class Kalender extends Component {
                                 <Col>
                                     <div>
                                         <Breadcrumb className="breadcrumb-me">
-                                            <BreadcrumbItem><Link to="/"><i className="fas fa-home mr-1"></i> Beranda</Link></BreadcrumbItem>
-                                            <BreadcrumbItem active>Kalender Akademik</BreadcrumbItem>
+                                            <BreadcrumbItem><Link to="/"><i className="fas fa-calendar-alt mr-2"></i> Kalender Akademik</Link></BreadcrumbItem>
                                         </Breadcrumb>
                                     </div>
                                     <h4 className="text-center mb-2">Kalender Akademik</h4>

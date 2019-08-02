@@ -35,7 +35,7 @@ class PetaRuang extends Component {
                                 <Col>
                                     <div>
                                         <Breadcrumb className="breadcrumb-me">
-                                            <BreadcrumbItem><Link to="/"><i className="fas fa-home mr-1"></i> Beranda</Link></BreadcrumbItem>
+                                            <BreadcrumbItem><Link to="/"><i className="fas fa-landmark mr-2"></i>Akademik</Link></BreadcrumbItem>
                                             <BreadcrumbItem active>Peta Ruang</BreadcrumbItem>
                                         </Breadcrumb>
                                     </div>
@@ -49,29 +49,30 @@ class PetaRuang extends Component {
                                                         <Col lg="3" sm="6" md="12" className="pt-3">
                                                             <Label for="exampleSelect">Semester :</Label>
                                                             <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
-                                                                <option>2019</option>
-                                                                <option>2018</option>
-                                                                <option>2017</option>
-                                                                <option>2016</option>
-                                                                <option>2015</option>
-                                                                <option>2014</option>
-                                                                <option>2013</option>
+                                                                <option>103-20151</option>
+                                                                <option>104-20152</option>
+                                                                <option>105-20161</option>
+                                                                <option>106-20162</option>
+                                                                <option>107-20171</option>
+                                                                <option>108-20172</option>
+                                                                <option>109-20181</option>
+                                                                <option>110-20191</option>
                                                             </Input>
                                                         </Col>
                                                         <Col lg="3" md="12" className="pt-3">
                                                             <Label for="exampleSelect">Ruangan :</Label>
                                                             <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
-                                                                <option>2019</option>
-                                                                <option>2018</option>
-                                                                <option>2017</option>
-                                                                <option>2016</option>
-                                                                <option>2015</option>
-                                                                <option>2014</option>
-                                                                <option>2013</option>
+                                                                <option>Gedung L-Ruang 208</option>
+                                                                <option>Gedung L-Ruang 302</option>
+                                                                <option>Gedung L-Ruang 304</option>
+                                                                <option>Gedung L-Ruang 305</option>
+                                                                <option>Gedung L-Ruang 307</option>
+                                                                <option>Gedung L-Ruang 403</option>
+                                                                <option>Gedung L-Ruang 404</option>
                                                             </Input>
                                                         </Col>
                                                         <Col sm="3" className="pt-3 mt-auto">
-                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Filter</Button>
+                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
                                                         </Col>
                                                     </FormGroup>
                                                 </Form>
@@ -91,8 +92,6 @@ class PetaRuang extends Component {
                                                         <th className="text-center">Rabu</th>
                                                         <th className="text-center">Kamis</th>
                                                         <th className="text-center">Jumat</th>
-                                                        <th className="text-center">Sabtu</th>
-                                                        <th className="text-center">Minggu</th>
                                                     </tr>
 
                                                 </thead>
@@ -100,26 +99,19 @@ class PetaRuang extends Component {
                                                     <tr>
                                                         <th scope="row">1</th>
                                                         <td>8:00</td>
-                                                        <td className="bg-danger text-white">Seksi:1707600015
-Nama MK:Statistika Ekonomi I</td>
+                                                        <td className="bg-danger text-white">1501600015, Perencanaan Pembelajaran, Yuliatri Sastrawijaya</td>
                                                         <td>Avail</td>
-                                                        <td className="bg-danger text-white">Seksi:1706600053
-Nama MK:Etika Profesi Akuntan</td>
+                                                        <td className="bg-danger text-white">1501600005, Algoritma dan Pemrograman, Hamidillah Ajie</td>
                                                         <td>Avail</td>
-                                                        <td className="text-center">Avail</td>
-                                                        <td className="text-center">Avail</td>
                                                         <td className="text-center">Avail</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">2</th>
                                                         <td>9:00</td>
                                                         <td>Avail</td>
-                                                        <td className="bg-danger text-white">Seksi:1707600027
-Nama MK:Pendalaman Metodologi Penelitian</td>
+                                                        <td className="bg-danger text-white">1512600017, Data Warehouse, Bambang Prasetya Adhi</td>
                                                         <td>Avail</td>
                                                         <td>Avail</td>
-                                                        <td className="text-center">Avail</td>
-                                                        <td className="text-center">Avail</td>
                                                         <td className="text-center">Avail</td>
                                                     </tr>
                                                     <tr>
@@ -128,12 +120,9 @@ Nama MK:Pendalaman Metodologi Penelitian</td>
                                                         <td>Avail</td>
                                                         <td>Avail</td>
                                                         <td>Avail</td>
-                                                        <td className="bg-danger text-white">Seksi:1707600028
-Nama MK:Manajemen Keuangan</td>
-                                                        <td className="bg-danger text-white">	Seksi:1707600022
-Nama MK:Filsafat Ilmu</td>
-                                                        <td className="text-center">Avail</td>
-                                                        <td className="text-center">Avail</td>
+                                                        <td className="bg-danger text-white">1512600046, Metode Penelitian, Ivan Hanafi</td>
+                                                        <td className="bg-danger text-white">1512600068, Teori Bahasa dan Automata, Bambang Prasetya Adhi</td>
+                                                        
                                                     </tr>
                                                 </tbody>
                                             </Table>

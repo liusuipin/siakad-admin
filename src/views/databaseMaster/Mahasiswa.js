@@ -13,7 +13,34 @@ class Mahasiswa extends Component {
     constructor() {
         super()
         this.state = {
-            modalData: false
+            modalData: false,
+            searchText: '',
+            data: [
+                {
+                    nim: "5235150233",
+                    nama_mahasiswa: "Azizah Khoiro Nisah",
+                    jalur_masuk: "SNMPTN",
+                    status_mahasiswa: "Aktif",
+                    status_biodata: "Sudah Lengkap",
+
+                },
+                {
+                    nim: "5235151078",
+                    nama_mahasiswa: "Nia Septiani",
+                    jalur_masuk: "SNMPTN",
+                    status_mahasiswa: "Aktif",
+                    status_biodata: "Sudah Lengkap",
+
+                },
+                {
+                    nim: "5235150646",
+                    nama_mahasiswa: "Cindy Desmayanti",
+                    jalur_masuk: "SNMPTN",
+                    status_mahasiswa: "Aktif",
+                    status_biodata: "Sudah Lengkap",
+
+                }
+            ]
         }
     }
 
@@ -23,7 +50,21 @@ class Mahasiswa extends Component {
         })
     }
 
+    handleSearch = (e) => {
+        this.setState({
+            searchText: e.target.value.toLowerCase()
+        })
+    }
+
     render() {
+        const { searchText, data } = this.state;
+        const filteredElements = data.filter(e => (
+            e.nim.toLowerCase().includes(searchText) ||
+            e.nama_mahasiswa.toLowerCase().includes(searchText) ||
+            e.jalur_masuk.toLowerCase().includes(searchText) ||
+            e.status_mahasiswa.toLowerCase().includes(searchText) ||
+            e.status_biodata.toLowerCase().includes(searchText)
+        ))
         return (
             <Fragment>
                 <Navigation />
@@ -35,13 +76,16 @@ class Mahasiswa extends Component {
                                 <Col>
                                     <div>
                                         <Breadcrumb className="breadcrumb-me">
-                                            <BreadcrumbItem><Link to="/"><i className="fas fa-home mr-1"></i> Beranda</Link></BreadcrumbItem>
+                                            <BreadcrumbItem><Link to="/"><i className="fas fa-database mr-2"></i>Database Master</Link></BreadcrumbItem>
                                             <BreadcrumbItem active>Database Mahasiswa</BreadcrumbItem>
                                         </Breadcrumb>
                                     </div>
                                     <div className="col-md-12 mx-auto mt-2">
-                                        <h4 className="text-center mb-4">Database Mahasiswa</h4>
+                                        <h4 className="text-center mb-4">Database Mahasiswa Pendidikan Teknik Informatika dan Komputer</h4>
                                         {/* <DataDosen data={this.dataSet} /> */}
+                                        <Col md={{ size: "6", offset: "6" }} sm="12">
+                                            <Input type="text" name="search" value={searchText} placeholder="Pencarian" onChange={this.handleSearch} />
+                                        </Col>
                                         <div className="table-responsive">
                                             <Table bordered>
                                                 <thead className="thead-light">
@@ -49,26 +93,49 @@ class Mahasiswa extends Component {
                                                         <th>No</th>
                                                         <th>NIM</th>
                                                         <th>Nama Mahasiswa</th>
-                                                        <th>Prodi</th>
                                                         <th>Jalur Masuk</th>
                                                         <th>Status MHS</th>
-                                                        <th className="text-center">Status Biodata</th>
-                                                        {/* <th>Aksi</th> */}
+                                                        <th>Status Biodata</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>12312</td>
-                                                        <td>Arif</td>
-                                                        <td>PTIK</td>
-                                                        <td>SNMPTN</td>
-                                                        <td>Aktif</td>
-                                                        <td className="text-center">Sudah Lengkap</td>
-                                                        {/* <td>
+                                                    {
+                                                        filteredElements.map((isi, index) => (
+                                                            <tr>
+                                                                <th scope="row">{index + 1}</th>
+                                                                <td>{isi.nim}</td>
+                                                                <td>{isi.nama_mahasiswa}</td>
+                                                                <td>{isi.jalur_masuk}</td>
+                                                                <td>{isi.status_mahasiswa}</td>
+                                                                <td>{isi.status_biodata}</td>
+
+                                                            </tr>
+                                                        ))
+                                                    }
+                                                    {/* <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>0024087402</td>
+                                                        <td>Hamidillah Ajie</td>
+                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                        <td>197408242005011001</td>
+                                                        <td>Laki-Laki</td>
+                                                        <td className="text-center">Aktif</td>
+                                                        <td>
                                                             <Button color="success" className="btn-sm" onClick={this.modalData}><i className="fas fa-user-edit"></i> Edit</Button>
-                                                        </td> */}
+                                                        </td>
                                                     </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>0025037206</td>
+                                                        <td>Widodo</td>
+                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                        <td>197203252005011002</td>
+                                                        <td>Laki-Laki</td>
+                                                        <td className="text-center">Aktif</td>
+                                                        <td>
+                                                            <Button color="success" className="btn-sm" onClick={this.modalData}><i className="fas fa-user-edit"></i> Edit</Button>
+                                                        </td>
+                                                    </tr> */}
                                                 </tbody>
                                             </Table>
                                         </div>
@@ -81,82 +148,7 @@ class Mahasiswa extends Component {
                     </div>
                 </div>
 
-                <Modal isOpen={this.state.modalData} toggle={this.modalData} className="modal-dialog-scrollable">
-                    <ModalHeader toggle={this.modalData}>Edit Data Dosen</ModalHeader>
-                    <ModalBody>
-                        <div>
-                            <Form>
-                                <FormGroup>
-                                    <Label for="exampleEmail">NIDN</Label>
-                                    <Input type="text" name="email" id="exampleEmail" placeholder="with a placeholder" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Nama</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="YULIATRI SASTRA WIJAYA" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Gelar Depan</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="Dr" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Gelar Belakang</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="M.Pd." />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">NIP</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="195807061983032002" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="exampleSelect">Home Base</Label>
-                                    <Input type="select" name="select" id="exampleSelect">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </Input>
-                                </FormGroup>
-                                <FormGroup tag="fieldset">
-                                    <Label>Jenis Kelamin</Label>
-                                    <FormGroup check>
-                                        <Label check>
-                                            <Input type="radio" name="radio1" />{' '}
-                                            Laki-laki
-            </Label>
-                                    </FormGroup>
-                                    <FormGroup check>
-                                        <Label check>
-                                            <Input type="radio" name="radio1" />{' '}
-                                            Perempuan
-            </Label>
-                                    </FormGroup>
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Tempat Lahir</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="Tanjungkarang Lampung" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Tempat Lahir</Label>
-                                    <Input type="date" name="password" id="examplePassword" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="exampleSelect">Keaktifan Dosen</Label>
-                                    <Input type="select" name="select" id="exampleSelect">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </Input>
-                                </FormGroup>
-                            </Form>
-                        </div>
-                    </ModalBody>
-                    <ModalFooter>
-                        <Button className="btn-info">Simpan</Button>
-                        <Button className="btn-danger" onClick={this.modalData}>Tutup</Button>
-                    </ModalFooter>
-                </Modal>
+
 
             </Fragment>
         )

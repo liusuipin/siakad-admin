@@ -1,0 +1,1410 @@
+<html>
+    <head>
+        <title>Daftar Kelas (C 06)</title>
+        <style>
+            body{
+              font-size: x-small;
+            }
+            .header {
+                font-family: Arial, sans-serif;
+                padding: 10px;
+                border: 1px solid #666;
+                border-bottom: 2px solid #000;
+            }
+            .body{
+                padding: 10px;
+                border: 1px solid #666;
+                border-top: none;
+            }
+            table {
+				border-collapse: collapse;
+				width: 100%;
+				margin: 0 auto;
+			}
+			th{
+				text-align: left;
+			}
+			td{
+				text-align: left;
+			}
+			.table-data{
+				margin-top: 225px;
+			}
+			.table-data tr td{
+				border: solid 1px #fff;
+			}
+			.text-center{
+				text-align: center
+			}
+            .center{
+                text-align: center;
+            }
+            h3{
+                margin: 5px;
+            }
+            h4{
+              margin-top: 5px;
+            }
+            .no-bold{
+                font-weight: normal;
+            }
+            .italic{
+              font-style: italic;
+            }
+            img{
+              padding: 3px;
+              border: 1px solid #555;
+            }
+        </style>
+    </head>
+
+    <body>
+    	<table>
+			<tr>
+				<td colspan="3">LOGO</td>
+				<td colspan="22">
+					<h2>
+						UNIVERSITAS NEGERI JAKARTA
+						<br/>
+						
+					</h2>
+				</td>
+			</tr>
+		</table>
+    	<table>
+    		<tr>
+    			<td colspan="2">Semester </td><td colspan="8">: 2 2018/2019</td>
+                <td colspan="5">Nama Dosen 1 </td><td colspan="5">: 0006075806-YULIATRI SASTRA WIJAYA             </td>
+            </tr>
+    		<tr>
+                <td colspan="2">Seksi </td><td colspan="8">: 1512600019</td>
+                <td colspan="5">Nama Dosen 2 </td><td colspan="5">: -</td>
+            </tr>
+            <tr>
+    			<td colspan="2">Nama Mata Kuliah/SKS </td><td colspan="8">: Skripsi/4 sks</td>
+    		    <td colspan="5">Nama Dosen 3 </td><td colspan="5">: -</td>
+            </tr>
+    		<tr>
+    			<td colspan="2">Lokasi/waktu 1 </td><td colspan="8">: </td>
+    		    <td colspan="5">Nama Dosen 4 </td><td colspan="5">: -</td>
+            </tr>
+    		<tr>
+    			<td colspan="2">Lokasi/Waktu 2 </td><td colspan="8">: </td>
+    		</tr>
+			<tr>
+    			<td colspan="2">Lokasi/Waktu 3 </td><td colspan="8">: </td>
+    		</tr>
+			<tr>
+    			<td colspan="2">Lokasi/Waktu 4 </td><td colspan="8">: </td>
+    		</tr>
+    	</table>
+    	<br/><br/>
+        <table border="1">
+            <thead>
+				<tr>
+					<td rowspan="2">NO</td>
+					<td rowspan="2">NIM</td>
+					<td rowspan="2">Nama Mahasiswa</td>
+					<td colspan="16">Perkuliahan</td>
+					<td colspan="4">Nilai Poin</td>
+					<td rowspan="2">Angka</td>
+					<td rowspan="2">Nilai</td>
+				</tr>
+				<tr>
+					<td width="5">1</td><td width="5">2</td><td width="5">3</td><td width="5">4</td><td width="5">5</td><td width="5">6</td><td width="5">7</td><td width="5">8</td><td width="5">9</td><td width="5">10</td><td width="5">11</td><td width="5">12</td><td width="5">13</td><td width="5">14</td><td width="5">15</td><td width="5">16</td>					<td>KUIS</td>
+					<td>UTS</td>
+					<td>UAS</td>
+					<td>TUGAS</td>
+				</tr>
+			</thead>
+			
+			<tbody>
+										<tr>
+							<td>1</td>
+							<td>5235120391</td>
+							<td>FITRI SETIADEWI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>2</td>
+							<td>5235122693</td>
+							<td>TONNY RESDIANTORO</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>3</td>
+							<td>5235122703</td>
+							<td>ANNISA APRILIANTI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>4</td>
+							<td>5235122723</td>
+							<td>ARASY ZAMANULLAIL</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>5</td>
+							<td>5235122725</td>
+							<td>YOGA LAWAYKA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>6</td>
+							<td>5235122728</td>
+							<td>Kafi Maulana</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>7</td>
+							<td>5235127208</td>
+							<td>ALFON IRAWAN TRIHADMOJO</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>8</td>
+							<td>5235127232</td>
+							<td>IBNU PRAHADIWIBOWO</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>9</td>
+							<td>5235127233</td>
+							<td>INTAN ARIES TYAWURI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>10</td>
+							<td>5235127249</td>
+							<td>NIDA AULIA HASANAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>11</td>
+							<td>5235128590</td>
+							<td>EGGI SAMEKTA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>12</td>
+							<td>5235131556</td>
+							<td>AISYAH DESTIWULANDARI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>13</td>
+							<td>5235131564</td>
+							<td>FEBRINA RAMADANI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>14</td>
+							<td>5235131565</td>
+							<td>AINUN MARDIAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>15</td>
+							<td>5235131569</td>
+							<td>MICHAEL YUNG</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>16</td>
+							<td>5235131581</td>
+							<td>V. FERRY GUSTIKA SAMELA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>17</td>
+							<td>5235131582</td>
+							<td>PURI ANDHIWIATI LESTARI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>18</td>
+							<td>5235131589</td>
+							<td>SELVI SUSANTI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>19</td>
+							<td>5235131607</td>
+							<td>DEBBY RAHMANA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>20</td>
+							<td>5235134394</td>
+							<td>RYAN NUR ADZI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>21</td>
+							<td>5235134406</td>
+							<td>REYNALDO YOHANES</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>22</td>
+							<td>5235134407</td>
+							<td>AYUB GILBERT DANANJAYA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>23</td>
+							<td>5235134413</td>
+							<td>ABEL BALBO</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>24</td>
+							<td>5235134425</td>
+							<td>IYAN SOFIYAN</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>25</td>
+							<td>5235134426</td>
+							<td>NURJANAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>26</td>
+							<td>5235134428</td>
+							<td>ZENDY SAPUTRA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>27</td>
+							<td>5235134438</td>
+							<td>BAYU NUGRAHA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>28</td>
+							<td>5235134446</td>
+							<td>RISKA LERLIN MARLINA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>29</td>
+							<td>5235141125</td>
+							<td>NURUL FAUZIAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>30</td>
+							<td>5235141126</td>
+							<td>MUHAMAD NAUFAL ALDIS</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>31</td>
+							<td>5235141128</td>
+							<td>IRVAN BASTIAN</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>32</td>
+							<td>5235141139</td>
+							<td>IDATUL ALIYAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>33</td>
+							<td>5235141153</td>
+							<td>FANA SUMARNA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>34</td>
+							<td>5235141931</td>
+							<td>DZAKIA FATHIMAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>35</td>
+							<td>5235141936</td>
+							<td>SYAFIRA KHAIRUNNISA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>36</td>
+							<td>5235141938</td>
+							<td>ACHMAD FAUZI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>37</td>
+							<td>5235141941</td>
+							<td>ARDHIKA LUTFI NUGRAHA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>38</td>
+							<td>5235141949</td>
+							<td>HILMI ATIKAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>39</td>
+							<td>5235141950</td>
+							<td>RIYADH WICANISA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>40</td>
+							<td>5235144254</td>
+							<td>HASNA ALIFA NABILAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>41</td>
+							<td>5235144255</td>
+							<td>ABI DZAR RABBANI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>42</td>
+							<td>5235144257</td>
+							<td>MOHAMAD IHYA ULUMUDIN</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>43</td>
+							<td>5235144259</td>
+							<td>AHMAD ZAINURI FACHRI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>44</td>
+							<td>5235144270</td>
+							<td>AHMAD FARHAN AKBARY</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>45</td>
+							<td>5235144273</td>
+							<td>NAILIS NUR SAADAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>46</td>
+							<td>5235145654</td>
+							<td>ACHMAD YAMIN</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>47</td>
+							<td>5235150045</td>
+							<td>ATIKAH MUTHMA INNAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>48</td>
+							<td>5235150071</td>
+							<td>AHMAD SYAWLANA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>49</td>
+							<td>5235150090</td>
+							<td>ALGHI FARI HERLAMBANG</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>50</td>
+							<td>5235150143</td>
+							<td>JAFAR SODIK</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>51</td>
+							<td>5235150163</td>
+							<td>JULIANA SIHALOHO</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>52</td>
+							<td>5235150198</td>
+							<td>YAYAT SUMIYATI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>53</td>
+							<td>5235150233</td>
+							<td>AZIZAH KHOIRO NISAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>54</td>
+							<td>5235150237</td>
+							<td>INTAN MA NUNAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>55</td>
+							<td>5235150345</td>
+							<td>ADI SUMARDI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>56</td>
+							<td>5235150428</td>
+							<td>ADITYA PRATAMA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>57</td>
+							<td>5235150644</td>
+							<td>DESSY KARINA DEWI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>58</td>
+							<td>5235150646</td>
+							<td>CINDY DESMAYANTI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>59</td>
+							<td>5235150704</td>
+							<td>ANNISA ADINDA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>60</td>
+							<td>5235150721</td>
+							<td>SETYA ACHSANUL ARIEF</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>61</td>
+							<td>5235150729</td>
+							<td>GALUH PUTRA PRASADHA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>62</td>
+							<td>5235150879</td>
+							<td>DINDA MARTA ASTARI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>63</td>
+							<td>5235150916</td>
+							<td>INTAN PUSPASURI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>64</td>
+							<td>5235150928</td>
+							<td>ELVIRA ELSA DIVA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>65</td>
+							<td>5235150935</td>
+							<td>TUTI AULIYANI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>66</td>
+							<td>5235150985</td>
+							<td>ARRIAN RIZKI FIRDAUS</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>67</td>
+							<td>5235151078</td>
+							<td>NIA SEPTIANI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>68</td>
+							<td>5235151168</td>
+							<td>FIRMAN SETIANSYAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>69</td>
+							<td>5235151225</td>
+							<td>SHARADINAH MUNISAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>70</td>
+							<td>5235151282</td>
+							<td>DEWI OKTAVIANI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>71</td>
+							<td>5235151390</td>
+							<td>FADILA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>72</td>
+							<td>5235151425</td>
+							<td>IRNA KHADIJAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>73</td>
+							<td>5235151658</td>
+							<td>VIRGINIA ZAHARA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>74</td>
+							<td>5235151765</td>
+							<td>SRI SUHARTINI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>75</td>
+							<td>5235151814</td>
+							<td>TIARA SUSMADHITA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>76</td>
+							<td>5235151826</td>
+							<td>GAMIZAR NAUFAL RAFIF</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>77</td>
+							<td>5235151833</td>
+							<td>SEPTIA NUR KUMALA PUTRI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>78</td>
+							<td>5235151927</td>
+							<td>DEVIN</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>79</td>
+							<td>5235151932</td>
+							<td>VIDIA IMANIAR WALUYO</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>80</td>
+							<td>5235152008</td>
+							<td>MIFTAHUL ZANNAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>81</td>
+							<td>5235152263</td>
+							<td>FEBRIANTO WIDYOUTOMO</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>82</td>
+							<td>5235152329</td>
+							<td>MOCH. ALDO SETIAWAN</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>83</td>
+							<td>5235152430</td>
+							<td>ALAM BUDY KUSUMA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>84</td>
+							<td>5235152477</td>
+							<td>FATHIAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>85</td>
+							<td>5235152526</td>
+							<td>ANGRILLA MUSFARANNISS CHANTI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>86</td>
+							<td>5235152533</td>
+							<td>ARIF BUDI SETIAWAN</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>87</td>
+							<td>5235152549</td>
+							<td>AMELIA INDAH BESTARI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>88</td>
+							<td>5235152709</td>
+							<td>YUNI ASTIVAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>89</td>
+							<td>5235152786</td>
+							<td>SEPTIANI DIAN LESTARI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>90</td>
+							<td>5235152974</td>
+							<td>NAORAH PUTRI ANGGELIA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>91</td>
+							<td>5235153136</td>
+							<td>SURYANI NOVIANA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>92</td>
+							<td>5235153242</td>
+							<td>SYAIFUL ARIFIN</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>93</td>
+							<td>5235153266</td>
+							<td>BHAYU AJI SENO</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>94</td>
+							<td>5235153365</td>
+							<td>FERDINAND LOUIS</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>95</td>
+							<td>5235153381</td>
+							<td>ERWIN FIRMANSYAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>96</td>
+							<td>5235153382</td>
+							<td>DWI SUCHISTY</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>97</td>
+							<td>5235153575</td>
+							<td>VEMBY PRAYOGA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>98</td>
+							<td>5235153669</td>
+							<td>KEVIN RAMADHAN KARIDJAN</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>99</td>
+							<td>5235153767</td>
+							<td>FARIKHAH SETYA MAHARANI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>100</td>
+							<td>5235154063</td>
+							<td>JENNYTA AGENG RAMADHANTY</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>101</td>
+							<td>5235154133</td>
+							<td>FAYSHAL UMAR</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>102</td>
+							<td>5235154183</td>
+							<td>ANDHINI DWI PUTRI</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>103</td>
+							<td>5235154218</td>
+							<td>ANDIKA SUNARYO</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>104</td>
+							<td>5235154242</td>
+							<td>RIZA MAULANA HALIM</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>105</td>
+							<td>5235154528</td>
+							<td>KHAIRUL HUDHA NASUTION</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>106</td>
+							<td>5235154904</td>
+							<td>NURAINI AZIZAH</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+										<tr>
+							<td>107</td>
+							<td>5235155571</td>
+							<td>ACHMAD AHLAR RIDHA</td>
+				<td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td><td width="5"></td>			
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+							</tbody>
+			
+          </table>
+    </body>
+</html>

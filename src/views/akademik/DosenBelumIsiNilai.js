@@ -7,7 +7,7 @@ import Sidebar from '../../components/sidebar/Sidebar';
 // import DataDosen from './DataDosen';
 // import Footer from '../../components/footer/Footer';
 // import DataMengajar from './DataMengajar';
-
+import DosenBelumIsiNilai110 from '../akademik/Daftar_Dosen_Belum_Isi_Nilai.xls'
 class DosenBelumIsiNilai extends Component {
 
     constructor() {
@@ -35,7 +35,7 @@ class DosenBelumIsiNilai extends Component {
                                 <Col>
                                     <div>
                                         <Breadcrumb className="breadcrumb-me">
-                                            <BreadcrumbItem><Link to="/"><i className="fas fa-home mr-1"></i> Beranda</Link></BreadcrumbItem>
+                                            <BreadcrumbItem><Link to="/"><i className="fas fa-landmark mr-2"></i>Akademik</Link></BreadcrumbItem>
                                             <BreadcrumbItem active>Dosen Belum Isi Nilai</BreadcrumbItem>
                                         </Breadcrumb>
                                     </div>
@@ -44,7 +44,7 @@ class DosenBelumIsiNilai extends Component {
                                         {/* <DataDosen data={this.dataSet} /> */}
                                         <Row>
                                             <Col sm="6" className="pt-3">
-                                                <Button color="info" className="btn-sm" onClick={this.modalData}><i className="far fa-file-excel"></i> Ekspor</Button>
+                                                <a href={DosenBelumIsiNilai110} download><Button color="info" className="btn-sm" onClick={this.modalData}><i className="far fa-file-excel"></i> Ekspor</Button></a>
                                             </Col>
                                         </Row>
                                         <div className="table-responsive mt-3">
@@ -56,19 +56,19 @@ class DosenBelumIsiNilai extends Component {
                                                         <th>Seksi/ Kelas</th>
                                                         <th>Dosen</th>
                                                         <th>Nama Mata Kuliah</th>
-                                                        <th>JSKS</th>
+                                                        <th>JML SKS</th>
                                                         <th className="text-center">Jumlah Peserta</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">1</th>
-                                                        <td>PENDIDIKAN TEKNIK INFORMATIKA DAN KOMPUTER</td>
-                                                        <td>1512600072</td>
-                                                        <td>Bachren Zaini</td>
-                                                        <td>Aljabar Linier</td>
+                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                        <td>52350682</td>
+                                                        <td>Hamidillah Ajie</td>
+                                                        <td>Desain Web Lanjut</td>
                                                         <td>3</td>
-                                                        <td className="text-center">14</td>
+                                                        <td className="text-center">30</td>
                                                     </tr>
                                                 </tbody>
                                             </Table>
@@ -82,82 +82,7 @@ class DosenBelumIsiNilai extends Component {
                     </div>
                 </div>
 
-                <Modal isOpen={this.state.modalData} toggle={this.modalData} className="modal-dialog-scrollable">
-                    <ModalHeader toggle={this.modalData}>Edit Data Dosen</ModalHeader>
-                    <ModalBody>
-                        <div>
-                            <Form>
-                                <FormGroup>
-                                    <Label for="exampleEmail">NIDN</Label>
-                                    <Input type="text" name="email" id="exampleEmail" placeholder="with a placeholder" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Nama</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="YULIATRI SASTRA WIJAYA" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Gelar Depan</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="Dr" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Gelar Belakang</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="M.Pd." />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">NIP</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="195807061983032002" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="exampleSelect">Home Base</Label>
-                                    <Input type="select" name="select" id="exampleSelect">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </Input>
-                                </FormGroup>
-                                <FormGroup tag="fieldset">
-                                    <Label>Jenis Kelamin</Label>
-                                    <FormGroup check>
-                                        <Label check>
-                                            <Input type="radio" name="radio1" />{' '}
-                                            Laki-laki
-            </Label>
-                                    </FormGroup>
-                                    <FormGroup check>
-                                        <Label check>
-                                            <Input type="radio" name="radio1" />{' '}
-                                            Perempuan
-            </Label>
-                                    </FormGroup>
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Tempat Lahir</Label>
-                                    <Input type="text" name="password" id="examplePassword" defaultValue="Tanjungkarang Lampung" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Tempat Lahir</Label>
-                                    <Input type="date" name="password" id="examplePassword" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="exampleSelect">Keaktifan Dosen</Label>
-                                    <Input type="select" name="select" id="exampleSelect">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </Input>
-                                </FormGroup>
-                            </Form>
-                        </div>
-                    </ModalBody>
-                    <ModalFooter>
-                        <Button className="btn-info">Simpan</Button>
-                        <Button className="btn-danger" onClick={this.modalData}>Tutup</Button>
-                    </ModalFooter>
-                </Modal>
+
 
             </Fragment>
         )

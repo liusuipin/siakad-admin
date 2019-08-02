@@ -12,7 +12,7 @@ class UbahPass extends Component {
     update = () => {
         return Swal.fire(
             'Sukses!',
-            `Kode seksi <b>1512600022</b> berhasil di isi !`,
+            `Kata Sandi <b>15126</b> berhasil di ubah !`,
             'success'
         )
     }
