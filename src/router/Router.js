@@ -22,13 +22,12 @@ import Mahasiswa from '../views/databaseMaster/Mahasiswa';
 import MataKuliah from '../views/databaseMaster/MataKuliah.js';
 import Penjadwalan from '../views/akademik/Penjadwalan';
 import PetaRuang from '../views/akademik/PetaRuang';
-import PetaDosen from '../views/akademik/PetaDosen';
-import KelasDosen from '../views/akademik/KelasDosen';
 import KelasSeksi from '../views/akademik/KelasSeksi';
 import PembimbingAkademik from '../views/akademik/PembimbingAkademik';
 import StudiMahasiswa from '../views/akademik/StudiMahasiswa';
 import KrsKosong from '../views/akademik/KrsKosong';
 import DosenBelumIsiNilai from '../views/akademik/DosenBelumIsiNilai';
+import JadwalDosen from '../views/akademik/JadwalDosen.js';
 
 
 
@@ -59,8 +58,7 @@ class Router extends Component {
 
                         <Route path='/penjadwalan' component={Penjadwalan} exact />
                         <Route path='/peta-ruang' component={PetaRuang} exact />
-                        <Route path='/peta-dosen' component={PetaDosen} exact />
-                        <Route path='/kelas-dosen' component={KelasDosen} exact />
+                        <Route path='/jadwal-dosen' component={JadwalDosen} exact />
                         <Route path='/kelas-seksi' component={KelasSeksi} exact />
                         <Route path='/pembimbing-akademik' component={PembimbingAkademik} exact />
                         <Route path='/studi-mahasiswa' component={StudiMahasiswa} exact />

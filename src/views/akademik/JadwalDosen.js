@@ -8,12 +8,13 @@ import classnames from 'classnames';
 import InputData from './InputData';
 import DaftarJadwal from './DaftarJadwal';
 import UploadPenjadwalan from './UploadPenjadwalan';
-import KelasSeksi from './KelasSeksi';
+import PetaDosen from './PetaDosen';
+import KelasDosen from './KelasDosen';
 // import DataDosen from './DataDosen';
 // import Footer from '../../components/footer/Footer';
 // import DataMengajar from './DataMengajar';
 
-class Penjadwalan extends Component {
+class JadwalDosen extends Component {
 
     constructor(props) {
         super(props)
@@ -43,11 +44,11 @@ class Penjadwalan extends Component {
                                     <div>
                                         <Breadcrumb className="breadcrumb-me">
                                             <BreadcrumbItem><Link to="/"><i className="fas fa-landmark mr-2"></i>Akademik</Link></BreadcrumbItem>
-                                            <BreadcrumbItem active>Penjadwalan</BreadcrumbItem>
+                                            <BreadcrumbItem active>Jadwal Dosen</BreadcrumbItem>
                                         </Breadcrumb>
                                     </div>
                                     <div className="col-md-12 mx-auto mt-2">
-                                        <h4 className="text-center mb-4">Penjadwalan Pendidikan Teknik Informatika dan Komputer</h4>
+                                        <h4 className="text-center mb-4">Jadwal Dosen</h4>
 
                                         <Row>
                                             <Col sm="12">
@@ -57,7 +58,7 @@ class Penjadwalan extends Component {
                                                             className={classnames({ active: this.state.activeTab === '1' })}
                                                             onClick={() => { this.toggle('1'); }}
                                                         >
-                                                            <i className="fas fa-check-circle mr-2"></i>Input Data
+                                                            <i className="fas fa-map-marked-alt mr-2"></i>Peta Dosen
                                                         </NavLink>
                                                     </NavItem>
                                                     <NavItem>
@@ -65,34 +66,17 @@ class Penjadwalan extends Component {
                                                             className={classnames({ active: this.state.activeTab === '2' })}
                                                             onClick={() => { this.toggle('2'); }}
                                                         >
-                                                            <i className="fas fa-list-alt mr-2"></i>Daftar Jadwal
+                                                            <i className="fas fa-list-alt mr-2"></i>Kelas Dosen
                                                         </NavLink>
                                                     </NavItem>
-                                                    <NavItem>
-                                                        <NavLink
-                                                            className={classnames({ active: this.state.activeTab === '3' })}
-                                                            onClick={() => { this.toggle('3'); }}
-                                                        >
-                                                            <i className="fas fa-school mr-2"></i>Kelas Seksi
-                                                        </NavLink>
-                                                    </NavItem>
-                                                    <NavItem>
-                                                        <NavLink
-                                                            className={classnames({ active: this.state.activeTab === '4' })}
-                                                            onClick={() => { this.toggle('4'); }}
-                                                        >
-                                                            <i className="fas fa-cloud-upload-alt mr-2"></i>Upload Penjadwalan
-                                                        </NavLink>
-                                                    </NavItem>
+                                                    
                                                 </Nav>
 
 
                                                 <TabContent activeTab={this.state.activeTab}>
 
-                                                    <InputData />
-                                                    <DaftarJadwal activeTab={this.state.activeTab} toggle={this.toggle} />
-                                                    <KelasSeksi />
-                                                    <UploadPenjadwalan />
+                                                    <PetaDosen />
+                                                    <KelasDosen />
 
                                                 </TabContent>
                                             </Col>
@@ -111,12 +95,7 @@ class Penjadwalan extends Component {
         )
     }
 
-    // dataSet = [
-    //     ["1", "1231232", "Yuliatri Sastra Widjaya", "PTIK", "21311312", "Perempuan", "Aktif", `<Button className="btn-success">Edit</Button>`],
-    //     ["2", "321313", "Bambang Adhi", "PTIK", "21311312", "Perempuan", "Aktif", `<Button className="btn-success">Edit</Button>`]
-    // ];
-
 }
 
-export default GlobalConsumer(Penjadwalan);
+export default GlobalConsumer(JadwalDosen);
 

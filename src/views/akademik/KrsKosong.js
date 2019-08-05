@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Breadcrumb, BreadcrumbItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Row, Col, UncontrolledCollapse, Breadcrumb, BreadcrumbItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { GlobalConsumer } from '../../context/context';
 import Navigation from '../../components/navigation/Navigation';
 import Sidebar from '../../components/sidebar/Sidebar';
@@ -40,7 +40,7 @@ class KrsKosong extends Component {
                                         </Breadcrumb>
                                     </div>
                                     <div className="col-md-12 mx-auto mt-2">
-                                        <h4 className="text-center mb-2">KRS Kosong</h4>
+                                        <h4 className="text-center mb-2">KRS Kosong Pendidikan Teknik Informatika dan Komputer</h4>
                                         {/* <DataDosen data={this.dataSet} /> */}
                                         <Row>
                                             <Col sm="12">
@@ -64,61 +64,58 @@ class KrsKosong extends Component {
                                                             <Label for="exampleSelect">Status :</Label>
                                                             <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
                                                                 <option>Pilih Status</option>
-                                                                <option>Bayar</option>
+                                                                <option>Bayar (Sudah Isi KRS)</option>
+                                                                <option>Bayar (Belum Isi KRS)</option>
                                                                 <option>Belum Bayar</option>
                                                                 <option>Cuti</option>
                                                                 <option>Mangkir</option>
-                                                                <option>Lainnya</option>
                                                             </Input>
                                                         </Col>
                                                         <Col sm="3" className="pt-3 mt-auto">
-                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
+                                                            <Button id="toggler" color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
                                                         </Col>
                                                     </FormGroup>
                                                 </Form>
                                             </Col>
                                         </Row>
-                                        <div className="table-responsive mt-2">
-                                            <Table bordered>
-                                                <thead className="thead-light">
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>NIM</th>
-                                                        <th>Nama Mahasiswa</th>
-                                                        <th>Jalur Masuk</th>
-                                                        <th>Program Studi</th>
-                                                        <th>Status Mahasiswa</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>5235150233</td>
-                                                        <td>Azizah Khoiro Nisah</td>
-                                                        <td>SNMPTN</td>
-                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
-                                                        <td>Bayar</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>5235151078</td>
-                                                        <td>Nia Septiani</td>
-                                                        <td>SNMPTN</td>
-                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
-                                                        <td>Bayar</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>5235150646</td>
-                                                        <td>Cindy Desmayanti</td>
-                                                        <td>SNMPTN</td>
-                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
-                                                        <td>Bayar</td>
-                                                    </tr>
-                                                </tbody>
-                                            </Table>
-                                        </div>
-
+                                        <UncontrolledCollapse toggler="#toggler">
+                                            <div className="table-responsive mt-2">
+                                                <Table bordered>
+                                                    <thead className="thead-light">
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th>NIM</th>
+                                                            <th>Nama Mahasiswa</th>
+                                                            <th>Jalur Masuk</th>
+                                                            <th>Status Mahasiswa</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>5235150233</td>
+                                                            <td>Azizah Khoiro Nisah</td>
+                                                            <td>SNMPTN</td>
+                                                            <td>Bayar (Sudah Isi KRS)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2</th>
+                                                            <td>5235151078</td>
+                                                            <td>Nia Septiani</td>
+                                                            <td>SNMPTN</td>
+                                                            <td>Bayar (Sudah Isi KRS)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <td>5235150646</td>
+                                                            <td>Cindy Desmayanti</td>
+                                                            <td>SNMPTN</td>
+                                                            <td>Bayar (Sudah Isi KRS)</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </Table>
+                                            </div>
+                                        </UncontrolledCollapse>
                                     </div>
                                 </Col>
                             </Row>
@@ -127,7 +124,7 @@ class KrsKosong extends Component {
                     </div>
                 </div>
 
-            
+
             </Fragment>
         )
     }

@@ -136,7 +136,7 @@ class Dosen extends Component {
                                                         <th>No</th>
                                                         <th>NIDN</th>
                                                         <th>Nama Dosen</th>
-                                                        <th>Program Studi</th>
+                                                        <th>Siakad Dosen UNJ</th>
                                                         <th>NIP</th>
                                                         <th>Jenis Kelamin</th>
                                                         <th className="text-center">Status</th>

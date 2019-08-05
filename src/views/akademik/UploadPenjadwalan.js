@@ -13,7 +13,7 @@ export default class InputData extends Component {
     render() {
         return (
             <Fragment>
-                <TabPane tabId="3" className="mt-3">
+                <TabPane tabId="4" className="mt-3">
                     <ListGroup>
                         <ListGroupItem disabled tag="a" href="#" className="bg-light"><i className="fas fa-cloud-upload-alt mr-2"></i>Import Penjadwalan</ListGroupItem>
                         <ListGroupItem>

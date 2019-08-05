@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Breadcrumb, BreadcrumbItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Row, Col, UncontrolledCollapse, Breadcrumb, BreadcrumbItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+// masukin UncontrolledCollapse di import yg reactstrap
 import { GlobalConsumer } from '../../context/context';
 import Navigation from '../../components/navigation/Navigation';
 import Sidebar from '../../components/sidebar/Sidebar';
@@ -49,6 +50,7 @@ class PetaRuang extends Component {
                                                         <Col lg="3" sm="6" md="12" className="pt-3">
                                                             <Label for="exampleSelect">Semester :</Label>
                                                             <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
+                                                                <option>Pilih Semester</option>
                                                                 <option>103-20151</option>
                                                                 <option>104-20152</option>
                                                                 <option>105-20161</option>
@@ -60,8 +62,9 @@ class PetaRuang extends Component {
                                                             </Input>
                                                         </Col>
                                                         <Col lg="3" md="12" className="pt-3">
-                                                            <Label for="exampleSelect">Ruangan :</Label>
+                                                            <Label for="exampleSelect">Ruang :</Label>
                                                             <Input type="select" name="select" id="exampleSelect" className="form-control-sm">
+                                                                <option>Pilih Ruang</option>
                                                                 <option>Gedung L-Ruang 208</option>
                                                                 <option>Gedung L-Ruang 302</option>
                                                                 <option>Gedung L-Ruang 304</option>
@@ -72,61 +75,125 @@ class PetaRuang extends Component {
                                                             </Input>
                                                         </Col>
                                                         <Col sm="3" className="pt-3 mt-auto">
-                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
+                                                            {/* kasih id="toggler" di button yg mau dklik */}
+                                                            <Button id="toggler" color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
                                                         </Col>
+
                                                     </FormGroup>
                                                 </Form>
                                             </Col>
                                         </Row>
-                                        <div className="table-responsive">
-                                            <Table bordered>
-                                                <thead className="thead-light">
-                                                    <tr>
-                                                        <th rowSpan={2} className="text-center">No</th>
-                                                        <th rowSpan={2} className="text-center">Jam Perkuliahan</th>
-                                                        <th colSpan={7} className="text-center">Hari Perkuliahan</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th className="text-center">Senin</th>
-                                                        <th className="text-center">Selasa</th>
-                                                        <th className="text-center">Rabu</th>
-                                                        <th className="text-center">Kamis</th>
-                                                        <th className="text-center">Jumat</th>
-                                                    </tr>
+                                        {/* bungkus semua file yg ingin ditampilkan dalam 
+                                        <UncontrolledCollapse toggler="#toggler">
+                                            {file yg mau ditampilkan}
+                                        </UncontrolledCollapse>
+                                        */}
+                                        <UncontrolledCollapse toggler="#toggler">
+                                            <div className="table-responsive">
+                                                <Table bordered>
+                                                    <thead className="thead-light">
+                                                        <tr>
+                                                            <th rowSpan={2} className="text-center">No</th>
+                                                            <th rowSpan={2} className="text-center">Jam Perkuliahan</th>
+                                                            <th colSpan={7} className="text-center">Hari Perkuliahan</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th className="text-center">Senin</th>
+                                                            <th className="text-center">Selasa</th>
+                                                            <th className="text-center">Rabu</th>
+                                                            <th className="text-center">Kamis</th>
+                                                            <th className="text-center">Jumat</th>
+                                                        </tr>
 
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>8:00</td>
-                                                        <td className="bg-danger text-white">1501600015, Perencanaan Pembelajaran, Yuliatri Sastrawijaya</td>
-                                                        <td>Avail</td>
-                                                        <td className="bg-danger text-white">1501600005, Algoritma dan Pemrograman, Hamidillah Ajie</td>
-                                                        <td>Avail</td>
-                                                        <td className="text-center">Avail</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>9:00</td>
-                                                        <td>Avail</td>
-                                                        <td className="bg-danger text-white">1512600017, Data Warehouse, Bambang Prasetya Adhi</td>
-                                                        <td>Avail</td>
-                                                        <td>Avail</td>
-                                                        <td className="text-center">Avail</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>10:00</td>
-                                                        <td>Avail</td>
-                                                        <td>Avail</td>
-                                                        <td>Avail</td>
-                                                        <td className="bg-danger text-white">1512600046, Metode Penelitian, Ivan Hanafi</td>
-                                                        <td className="bg-danger text-white">1512600068, Teori Bahasa dan Automata, Bambang Prasetya Adhi</td>
-                                                        
-                                                    </tr>
-                                                </tbody>
-                                            </Table>
-                                        </div>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>8:00</td>
+                                                            <td className="bg-danger text-white">1501600027, Elektronika Industri, Yuliatri Sastrawijaya</td>
+                                                            <td>Avail</td>
+                                                            <td className="bg-danger text-white">1501600005, Algoritma dan Pemrograman, Hamidillah Ajie</td>
+                                                            <td>Avail</td>
+                                                            <td className="text-center">Avail</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2</th>
+                                                            <td>9:00</td>
+                                                            <td>Avail</td>
+                                                            <td className="bg-danger text-white">1512600017, Data Warehouse, Bambang Prasetya Adhi</td>
+                                                            <td>Avail</td>
+                                                            <td>Avail</td>
+                                                            <td className="text-center">Avail</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <td>10:00</td>
+                                                            <td>Avail</td>
+                                                            <td>Avail</td>
+                                                            <td>Avail</td>
+                                                            <td className="bg-danger text-white">1512600046, Metode Penelitian, Ivan Hanafi</td>
+                                                            <td className="bg-danger text-white">1512600068, Teori Bahasa dan Automata, Bambang Prasetya Adhi</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">4</th>
+                                                            <td>11:00</td>
+                                                            <td>Avail</td>
+                                                            <td>Avail</td>
+                                                            <td>Avail</td>
+                                                            <td className="bg-danger text-white">1512600046, Metode Penelitian, Ivan Hanafi</td>
+                                                            <td className="bg-danger text-white">1512600068, Teori Bahasa dan Automata, Bambang Prasetya Adhi</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">5</th>
+                                                            <td>12:00</td>
+                                                            <td className="bg-danger text-white">1501600027, Elektronika Industri, Yuliatri Sastrawijaya</td>
+                                                            <td>Avail</td>
+                                                            <td className="bg-danger text-white">1501600005, Algoritma dan Pemrograman, Hamidillah Ajie</td>
+                                                            <td>Avail</td>
+                                                            <td className="text-center">Avail</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">6</th>
+                                                            <td>13:00</td>
+                                                            <td>Avail</td>
+                                                            <td className="bg-danger text-white">1512600017, Data Warehouse, Bambang Prasetya Adhi</td>
+                                                            <td>Avail</td>
+                                                            <td>Avail</td>
+                                                            <td className="text-center">Avail</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">7</th>
+                                                            <td>14:00</td>
+                                                            <td>Avail</td>
+                                                            <td className="bg-danger text-white">1512600017, Data Warehouse, Bambang Prasetya Adhi</td>
+                                                            <td>Avail</td>
+                                                            <td>Avail</td>
+                                                            <td className="text-center">Avail</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">8</th>
+                                                            <td>15:00</td>
+                                                            <td>Avail</td>
+                                                            <td className="bg-danger text-white">1512600017, Data Warehouse, Bambang Prasetya Adhi</td>
+                                                            <td>Avail</td>
+                                                            <td>Avail</td>
+                                                            <td className="text-center">Avail</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">9</th>
+                                                            <td>16:00</td>
+                                                            <td>Avail</td>
+                                                            <td>Avail</td>
+                                                            <td>Avail</td>
+                                                            <td className="bg-danger text-white">1512600046, Metode Penelitian, Ivan Hanafi</td>
+                                                            <td className="bg-danger text-white">1512600068, Teori Bahasa dan Automata, Bambang Prasetya Adhi</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </Table>
+                                            </div>
+                                        </UncontrolledCollapse>
 
                                     </div>
                                 </Col>

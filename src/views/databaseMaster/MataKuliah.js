@@ -120,7 +120,7 @@ class MataKuliah extends Component {
                                     <div className="col-md-12 mx-auto mt-2">
                                         <h4 className="text-center mb-4">Database Mata Kuliah Pendidikan Teknik Informatika dan Komputer</h4>
                                         {/* <DataDosen data={this.dataSet} /> */}
-                                        <Col md={{ size: "6", offset: "6" }} sm="12">
+                                        <Col md={{ size: "6", offset: "6" }} sm="12" className="mb-3">
                                             <Input type="text" name="search" value={searchText} placeholder="Pencarian" onChange={this.handleSearch} />
                                         </Col>
                                         <div className="table-responsive">

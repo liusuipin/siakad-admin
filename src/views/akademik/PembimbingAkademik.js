@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Breadcrumb, BreadcrumbItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Row, Col, UncontrolledCollapse, Breadcrumb, BreadcrumbItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { GlobalConsumer } from '../../context/context';
 import Navigation from '../../components/navigation/Navigation';
 import Sidebar from '../../components/sidebar/Sidebar';
@@ -23,24 +23,24 @@ class PembimbingAkademik extends Component {
         })
     }
 
-    delAlert=()=>{
+    delAlert = () => {
         return Swal.fire({
-  title: 'Anda yakin ingin menghapus data ini?',
-  text: "Anda tidak akan dapat mengembalikannya!",
-  type: 'warning',
-  showCancelButton: true,
-  confirmButtonColor: '#3085d6',
-  cancelButtonColor: '#d33',
-  confirmButtonText: 'Ya, hapus data!'
-}).then((result) => {
-  if (result.value) {
-    Swal.fire(
-      'Terhapus!',
-      'Data berhasil dihapus',
-      'success'
-    )
-  }
-})
+            title: 'Anda yakin ingin menghapus data ini?',
+            text: "Anda tidak akan dapat mengembalikannya!",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus data!'
+        }).then((result) => {
+            if (result.value) {
+                Swal.fire(
+                    'Terhapus!',
+                    'Data berhasil dihapus',
+                    'success'
+                )
+            }
+        })
     }
     render() {
         return (
@@ -79,95 +79,96 @@ class PembimbingAkademik extends Component {
                                                             </Input>
                                                         </Col>
                                                         <Col sm="3" className="pt-3 mt-auto">
-                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
+                                                            <Button id="toggler" color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
                                                         </Col>
                                                     </FormGroup>
                                                 </Form>
                                             </Col>
                                         </Row>
-                                        <Row>
-                                            <Col sm="12">
-                                                <h4>Daftar Mahasiswa Bimbingan Akademik</h4>
-                                                <hr />
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col sm="6">
-                                                <p><b>NIDN</b><br />0024087402</p>
-                                                <p><b>Nama Dosen</b><br />Hamidillah Ajie</p>
-                                            </Col>
-                                            <Col sm="6">
-                                                <p><b>Homebase</b><br />S1 Pendidikan Teknik Informatika dan Komputer</p>
-                                                <p><b>NIP</b><br />197408242005011001</p>
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col sm="12">
-                                                <Form className="mb-4">
-                                                    <FormGroup row>
-                                                        <Col lg="3" md="12" className="pt-3">
-                                                            <Input type="text" name="select" id="exampleSelect" className="form-control-sm" placeholder="Ketik NIM" />
-                                                        </Col>
-                                                        <Col sm="3" className="pt-3 mt-auto">
-                                                            <Button color="success" type="button" className="btn-sm"><i className="fas fa-user-plus"></i> Tambah Mahasiswa</Button>
-                                                        </Col>
-                                                    </FormGroup>
-                                                </Form>
-                                            </Col>
-                                        </Row>
-                                        <div className="table-responsive mt-2">
-                                            <Table bordered>
-                                                <thead className="thead-light">
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>NIM</th>
-                                                        <th>Nama Mahasiswa</th>
-                                                        <th>Jalur Masuk</th>
-                                                        <th>Program Studi</th>
-                                                        <th>IP. Kumulatif</th>
-                                                        <th className="text-center th-width185">Aksi</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>5235150233</td>
-                                                        <td>Azizah Khoiro Nisah</td>
-                                                        <td>SNMPTN</td>
-                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
-                                                        <td>3.65</td>
-                                                        <td className="text-center">
-                                                            <Button color="danger" className="btn-sm mr-2" onClick={this.delAlert}><i className="fas fa-trash-alt"></i> Hapus</Button>
-                                                        </td>
-                                                    </tr>
+                                        <UncontrolledCollapse toggler="#toggler">
+                                            <Row>
+                                                <Col sm="12">
+                                                    <h4>Daftar Mahasiswa Bimbingan Akademik</h4>
+                                                    <hr />
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                                <Col sm="6">
+                                                    <p><b>NIDN</b><br />0024087402</p>
+                                                    <p><b>Nama Dosen</b><br />Hamidillah Ajie</p>
+                                                </Col>
+                                                <Col sm="6">
+                                                    <p><b>Homebase</b><br />S1 Pendidikan Teknik Informatika dan Komputer</p>
+                                                    <p><b>NIP</b><br />197408242005011001</p>
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                                <Col sm="12">
+                                                    <Form className="mb-4">
+                                                        <FormGroup row>
+                                                            <Col lg="3" md="12" className="pt-3">
+                                                                <Input type="text" name="select" id="exampleSelect" className="form-control-sm" placeholder="Ketik NIM" />
+                                                            </Col>
+                                                            <Col sm="3" className="pt-3 mt-auto">
+                                                                <Button color="success" type="button" className="btn-sm"><i className="fas fa-user-plus"></i> Tambah Mahasiswa</Button>
+                                                            </Col>
+                                                        </FormGroup>
+                                                    </Form>
+                                                </Col>
+                                            </Row>
+                                            <div className="table-responsive mt-2">
+                                                <Table bordered>
+                                                    <thead className="thead-light">
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th>NIM</th>
+                                                            <th>Nama Mahasiswa</th>
+                                                            <th>Jalur Masuk</th>
+                                                            <th>Program Studi</th>
+                                                            <th>IP. Kumulatif</th>
+                                                            <th className="text-center th-width185">Aksi</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>5235150233</td>
+                                                            <td>Azizah Khoiro Nisah</td>
+                                                            <td>SNMPTN</td>
+                                                            <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                            <td>3.65</td>
+                                                            <td className="text-center">
+                                                                <Button color="danger" className="btn-sm mr-2" onClick={this.delAlert}><i className="fas fa-trash-alt"></i> Hapus</Button>
+                                                            </td>
+                                                        </tr>
 
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>5235151078</td>
-                                                        <td>Nia Septiani</td>
-                                                        <td>SNMPTN</td>
-                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
-                                                        <td>3.70</td>
-                                                        <td className="text-center">
-                                                            <Button color="danger" className="btn-sm mr-2" onClick={this.delAlert}><i className="fas fa-trash-alt"></i> Hapus</Button>
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <th scope="row">2</th>
+                                                            <td>5235151078</td>
+                                                            <td>Nia Septiani</td>
+                                                            <td>SNMPTN</td>
+                                                            <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                            <td>3.70</td>
+                                                            <td className="text-center">
+                                                                <Button color="danger" className="btn-sm mr-2" onClick={this.delAlert}><i className="fas fa-trash-alt"></i> Hapus</Button>
+                                                            </td>
+                                                        </tr>
 
-                                                     <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>5235150646</td>
-                                                        <td>Cindy Desmayanti</td>
-                                                        <td>SNMPTN</td>
-                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
-                                                        <td>3.80</td>
-                                                        <td className="text-center">
-                                                            <Button color="danger" className="btn-sm mr-2" onClick={this.delAlert}><i className="fas fa-trash-alt"></i> Hapus</Button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </Table>
-                                        </div>
-
+                                                        <tr>
+                                                            <th scope="row">2</th>
+                                                            <td>5235150646</td>
+                                                            <td>Cindy Desmayanti</td>
+                                                            <td>SNMPTN</td>
+                                                            <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                            <td>3.80</td>
+                                                            <td className="text-center">
+                                                                <Button color="danger" className="btn-sm mr-2" onClick={this.delAlert}><i className="fas fa-trash-alt"></i> Hapus</Button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </Table>
+                                            </div>
+                                        </UncontrolledCollapse>
                                     </div>
                                 </Col>
                             </Row>
@@ -180,7 +181,7 @@ class PembimbingAkademik extends Component {
                     <ModalHeader toggle={this.modalData}></ModalHeader>
                     <ModalBody>
                         <div>
-                        <h5>Anda Yakin Untuk Menghapus Data?</h5>
+                            <h5>Anda Yakin Untuk Menghapus Data?</h5>
                         </div>
                     </ModalBody>
                     <ModalFooter>

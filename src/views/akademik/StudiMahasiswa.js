@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Breadcrumb, BreadcrumbItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Row, Col, UncontrolledCollapse, Breadcrumb, BreadcrumbItem, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { GlobalConsumer } from '../../context/context';
 import Navigation from '../../components/navigation/Navigation';
 import Sidebar from '../../components/sidebar/Sidebar';
@@ -67,70 +67,71 @@ class StudiMahasiswa extends Component {
                                                             <Input type="text" name="select" id="exampleSelect" className="form-control-sm" placeholder="Ketik NIM / Nama Mahasiswa" />
                                                         </Col>
                                                         <Col sm="3" className="pt-3 mt-auto">
-                                                            <Button color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
+                                                            <Button id="toggler" color="info" type="button" className="btn-sm"><i className="fas fa-search"></i> Proses</Button>
                                                         </Col>
                                                     </FormGroup>
                                                 </Form>
                                             </Col>
                                         </Row>
-                                        <div className="table-responsive">
-                                            <Table bordered>
-                                                <thead className="thead-light">
+                                        <UncontrolledCollapse toggler="#toggler">
+                                            <div className="table-responsive">
+                                                <Table bordered>
+                                                    <thead className="thead-light">
 
-                                                    <tr>
-                                                        <th className="text-center">No.</th>
-                                                        <th className="text-center">NIM Mahasiswa</th>
-                                                        <th className="text-center">Nama Mahasiswa</th>
-                                                        <th className="text-center">Jalur Masuk</th>
-                                                        <th className="text-center">Program Studi</th>
-                                                        <th className="th-width250">Aksi</th>
-                                                    </tr>
+                                                        <tr>
+                                                            <th className="text-center">No.</th>
+                                                            <th className="text-center">NIM Mahasiswa</th>
+                                                            <th className="text-center">Nama Mahasiswa</th>
+                                                            <th className="text-center">Jalur Masuk</th>
+                                                            <th className="text-center">Program Studi</th>
+                                                            <th className="th-width250">Aksi</th>
+                                                        </tr>
 
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td colSpan={6}>Ditemukan sebanyak 3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>5235150233</td>
-                                                        <td>Azizah Khoiro Nisah</td>
-                                                        <td>SNMPTN</td>
-                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
-                                                        <td className="text-center">
-                                                            <a href={KRS}download><Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button></a>
-                                                            <a href={KHS}download><Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button></a>
-                                                            <a href={DHS}download><Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>5235151078</td>
-                                                        <td>Nia Septiani</td>
-                                                        <td>SNMPTN</td>
-                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
-                                                        <td className="text-center">
-                                                            <a href={KRS}download><Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button></a>
-                                                            <a href={KHS}download><Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button></a>
-                                                            <a href={DHS}download><Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>5235150646</td>
-                                                        <td>Cindy Desmayanti</td>
-                                                        <td>SNMPTN</td>
-                                                        <td>Pendidikan Teknik Informatika dan Komputer</td>
-                                                        <td className="text-center">
-                                                            <a href={KRS}download><Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button></a>
-                                                            <a href={KHS}download><Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button></a>
-                                                            <a href={DHS}download><Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </Table>
-                                        </div>
-
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colSpan={6}>Ditemukan sebanyak 3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>5235150233</td>
+                                                            <td>Azizah Khoiro Nisah</td>
+                                                            <td>SNMPTN</td>
+                                                            <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                            <td className="text-center">
+                                                                <a href={KRS} download><Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button></a>
+                                                                <a href={KHS} download><Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button></a>
+                                                                <a href={DHS} download><Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2</th>
+                                                            <td>5235151078</td>
+                                                            <td>Nia Septiani</td>
+                                                            <td>SNMPTN</td>
+                                                            <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                            <td className="text-center">
+                                                                <a href={KRS} download><Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button></a>
+                                                                <a href={KHS} download><Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button></a>
+                                                                <a href={DHS} download><Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <td>5235150646</td>
+                                                            <td>Cindy Desmayanti</td>
+                                                            <td>SNMPTN</td>
+                                                            <td>Pendidikan Teknik Informatika dan Komputer</td>
+                                                            <td className="text-center">
+                                                                <a href={KRS} download><Button color="info" className="btn-sm mr-2" onClick={this.modalData}><i className="fas fa-book"></i> KRS</Button></a>
+                                                                <a href={KHS} download><Button color="info" className="btn-sm" onClick={this.modalData}><i className="fas fa-book"></i> KHS</Button></a>
+                                                                <a href={DHS} download><Button color="info" className="btn-sm ml-2" onClick={this.modalData}><i className="fas fa-book"></i> DHS</Button></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </Table>
+                                            </div>
+                                        </UncontrolledCollapse>
                                     </div>
                                 </Col>
                             </Row>
@@ -139,7 +140,7 @@ class StudiMahasiswa extends Component {
                     </div>
                 </div>
 
-                
+
 
             </Fragment>
         )
