@@ -97,7 +97,7 @@ class KelasSeksi extends Component {
                                             <p><b>SKS</b><br />3</p>
                                         </Col>
                                         <Col sm="4">
-                                            <p><b>Program Studi</b><br />15126-S1 Pendidikan Teknik Informatika dan Komputer</p>
+                                            <p><b>Homebase</b><br />15126-S1 Pendidikan Teknik Informatika dan Komputer</p>
                                             <p><b>Dosen</b><br />0024087402, Hamidillah Ajie</p>
                                         </Col>
                                         <Col sm="4">

@@ -103,16 +103,16 @@ export default class PetaDosen extends Component {
                                                 <tr>
                                                     <th scope="row">1</th>
                                                     <td>8:00</td>
-                                                    <td className="bg-danger text-white">1501600015, Perencanaan Pembelajaran, S1-Pendidikan Teknik Informatika dan Komputer, Yuliatri Sastrawijaya</td>
+                                                    <td className="bg-danger text-white">1501600005, Algoritma dan Pemrograman, S1-Pendidikan Teknik Informatika dan Komputer, Hamidillah Ajie</td>
                                                     <td>Avail</td>
-                                                    <td className="bg-danger text-white">1512600017, Data Warehouse, S1-Pendidikan Teknik Informatika dan Komputer, Bambang Prasetya Adhi</td>
+                                                    <td>Avail</td>
                                                     <td>Avail</td>
                                                     <td className="text-center">Avail</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">2</th>
                                                     <td>9:00</td>
-                                                    <td>Avail</td>
+                                                    <td className="bg-danger text-white">1501600005, Algoritma dan Pemrograman, S1-Pendidikan Teknik Informatika dan Komputer, Hamidillah Ajie</td>
                                                     <td className="bg-danger text-white">1501600005, Algoritma dan Pemrograman, S1-Pendidikan Teknik Informatika dan Komputer, Hamidillah Ajie</td>
                                                     <td>Avail</td>
                                                     <td>Avail</td>
@@ -124,8 +124,8 @@ export default class PetaDosen extends Component {
                                                     <td>Avail</td>
                                                     <td>Avail</td>
                                                     <td>Avail</td>
-                                                    <td className="bg-danger text-white">1512600068, Teori Bahasa dan Automata, S1-Pendidikan Teknik Informatika dan Komputer, Bambang Prasetya Adhi</td>
-                                                    <td className="bg-danger text-white">1512600046, Metode Penelitian, S1-Pendidikan Teknik Informatika dan Komputer, Ivan Hanafi</td>
+                                                    <td className="bg-danger text-white">1512600068, Desain Web, S1-Pendidikan Teknik Informatika dan Komputer, Hamidillah Ajie</td>
+                                                    <td >Avail</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">4</th>
@@ -133,14 +133,14 @@ export default class PetaDosen extends Component {
                                                     <td>Avail</td>
                                                     <td>Avail</td>
                                                     <td>Avail</td>
-                                                    <td className="bg-danger text-white">1512600068, Teori Bahasa dan Automata, S1-Pendidikan Teknik Informatika dan Komputer, Bambang Prasetya Adhi</td>
-                                                    <td className="bg-danger text-white">1512600046, Metode Penelitian, S1-Pendidikan Teknik Informatika dan Komputer, Ivan Hanafi</td>
+                                                    <td className="bg-danger text-white">1512600068, Desain Web, S1-Pendidikan Teknik Informatika dan Komputer, Hamidillah Ajie</td>
+                                                    <td>Avail</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">5</th>
                                                     <td>12:00</td>
                                                     <td>Avail</td>
-                                                    <td className="bg-danger text-white">1501600005, Algoritma dan Pemrograman, S1-Pendidikan Teknik Informatika dan Komputer, Hamidillah Ajie</td>
+                                                    <td>Avail</td>
                                                     <td>Avail</td>
                                                     <td>Avail</td>
                                                     <td className="text-center">Avail</td>
@@ -148,9 +148,9 @@ export default class PetaDosen extends Component {
                                                 <tr>
                                                     <th scope="row">6</th>
                                                     <td>13:00</td>
-                                                    <td className="bg-danger text-white">1501600015, Perencanaan Pembelajaran, S1-Pendidikan Teknik Informatika dan Komputer, Yuliatri Sastrawijaya</td>
                                                     <td>Avail</td>
-                                                    <td className="bg-danger text-white">1512600017, Data Warehouse, S1-Pendidikan Teknik Informatika dan Komputer, Bambang Prasetya Adhi</td>
+                                                    <td>Avail</td>
+                                                    <td>Avail</td>
                                                     <td>Avail</td>
                                                     <td className="text-center">Avail</td>
                                                 </tr>
@@ -160,8 +160,8 @@ export default class PetaDosen extends Component {
                                                     <td>Avail</td>
                                                     <td>Avail</td>
                                                     <td>Avail</td>
-                                                    <td className="bg-danger text-white">1512600068, Teori Bahasa dan Automata, S1-Pendidikan Teknik Informatika dan Komputer, Bambang Prasetya Adhi</td>
-                                                    <td className="bg-danger text-white">1512600046, Metode Penelitian, S1-Pendidikan Teknik Informatika dan Komputer, Ivan Hanafi</td>
+                                                    <td>Avail</td>
+                                                    <td>Avail</td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">8</th>
@@ -175,9 +175,9 @@ export default class PetaDosen extends Component {
                                                 <tr>
                                                     <th scope="row">9</th>
                                                     <td>16:00</td>
-                                                    <td className="bg-danger text-white">1501600015, Perencanaan Pembelajaran, S1-Pendidikan Teknik Informatika dan Komputer, Yuliatri Sastrawijaya</td>
-                                                    <td>Avail</td>
-                                                    <td className="bg-danger text-white">1512600017, Data Warehouse, S1-Pendidikan Teknik Informatika dan Komputer, Bambang Prasetya Adhi</td>
+                                                    <td >Avail</td>
+                                                    <td className="bg-danger text-white">1501600005, Algoritma dan Pemrograman, S1-Pendidikan Teknik Informatika dan Komputer, Hamidillah Ajie</td>
+                                                    <td >Avail</td>
                                                     <td>Avail</td>
                                                     <td className="text-center">Avail</td>
                                                 </tr>
